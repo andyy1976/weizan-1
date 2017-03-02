@@ -1,0 +1,89 @@
+2016-03-23 16:44:08 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwz8DjMTSD9FRwpx3seEKrl8]]></FromUserName>
+<CreateTime>1458722648</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[MASSSENDJOBFINISH]]></Event>
+<MsgID>402225184</MsgID>
+<Status><![CDATA[send success]]></Status>
+<TotalCount>135</TotalCount>
+<FilterCount>135</FilterCount>
+<SentCount>135</SentCount>
+<ErrorCount>0</ErrorCount>
+</xml>
+
+2016-03-23 16:44:08 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-03-23 16:44:08 response :
+------------
+
+2016-03-23 20:47:54 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3hKSfV3PQ-XI5MRpn7lYuo]]></FromUserName>
+<CreateTime>1458737274</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-03-23 20:47:54 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-03-23 20:47:54 response :
+------------
+
+2016-03-23 20:57:17 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw-9n0T4rKjIAlTt4SiRfvgs]]></FromUserName>
+<CreateTime>1458737837</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-03-23 20:57:17 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-03-23 20:57:17 response :
+------------
+
+2016-03-23 22:46:52 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwwAjFsGhAhwQpImZ6MamwqA]]></FromUserName>
+<CreateTime>1458744412</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-03-23 22:46:52 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-03-23 22:46:52 response :
+------------
+

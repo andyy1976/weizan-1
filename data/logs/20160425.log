@@ -1,0 +1,320 @@
+2016-04-25 00:44:18 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduDgeoD9US108xLmd1ezBdw4]]></FromUserName>
+<CreateTime>1461516258</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 00:44:18 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-25 00:44:18 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduDgeoD9US108xLmd1ezBdw4 ;
+MsgType : text ;
+Content : 活动已经结束了！ ;
+
+2016-04-25 00:56:37 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduHuTHTTAbmPyRaOpLgdZ_Ws]]></FromUserName>
+<CreateTime>1461516997</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 08:55:17 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduNWdGoNZI049t1j3wc35XP0]]></FromUserName>
+<CreateTime>1461545716</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 08:55:17 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-25 08:55:17 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduNWdGoNZI049t1j3wc35XP0 ;
+MsgType : text ;
+Content : 活动已经结束了！ ;
+
+2016-04-25 09:40:00 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduLIKxomqrqwPKXEE-pmHTSc]]></FromUserName>
+<CreateTime>1461548400</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 09:40:00 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-25 09:40:00 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduLIKxomqrqwPKXEE-pmHTSc ;
+MsgType : text ;
+Content : 活动已经结束了！ ;
+
+2016-04-25 09:40:15 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduLIKxomqrqwPKXEE-pmHTSc]]></FromUserName>
+<CreateTime>1461548415</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 09:45:41 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwxFdtaxnD_k24ko0_Qx-VmA]]></FromUserName>
+<CreateTime>1461548741</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 09:45:41 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-25 09:45:41 response :
+------------
+
+2016-04-25 11:09:45 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduOAC6FqfeVqTHv9LWaKy4EY]]></FromUserName>
+<CreateTime>1461553785</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 11:09:45 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-25 11:09:45 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduOAC6FqfeVqTHv9LWaKy4EY ;
+MsgType : text ;
+Content : 活动已经结束了！ ;
+
+2016-04-25 12:16:21 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduHppdZOfS9u3h2ton61dfOw]]></FromUserName>
+<CreateTime>1461557781</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 12:16:21 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-25 12:16:21 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduHppdZOfS9u3h2ton61dfOw ;
+MsgType : text ;
+Content : 活动已经结束了！ ;
+
+2016-04-25 12:16:39 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduHppdZOfS9u3h2ton61dfOw]]></FromUserName>
+<CreateTime>1461557799</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 12:30:44 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw_Sdl4QvCWqRywcbF_DvyWQ]]></FromUserName>
+<CreateTime>1461558643</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 13:05:51 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduF-rbd2wBK5VtthPYrAQ2do]]></FromUserName>
+<CreateTime>1461560751</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 13:05:51 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-25 13:05:51 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduF-rbd2wBK5VtthPYrAQ2do ;
+MsgType : text ;
+Content : 活动已经结束了！ ;
+
+2016-04-25 13:47:59 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduCEb99cj8U--TQAgrcCMEQc]]></FromUserName>
+<CreateTime>1461563279</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 14:05:19 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduLrxJ1wXyy_nqnqdLpPPV7g]]></FromUserName>
+<CreateTime>1461564319</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 14:07:26 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduGIV3l6Fxof8yN9QxzU7gUM]]></FromUserName>
+<CreateTime>1461564446</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 15:22:09 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduKQKUTTVAjXpACeC_Dyr-A0]]></FromUserName>
+<CreateTime>1461568929</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-25 15:22:09 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-25 15:22:09 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduKQKUTTVAjXpACeC_Dyr-A0 ;
+MsgType : text ;
+Content : 活动已经结束了！ ;
+
+2016-04-25 17:38:23 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwz8DjMTSD9FRwpx3seEKrl8]]></FromUserName>
+<CreateTime>1461577103</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[MASSSENDJOBFINISH]]></Event>
+<MsgID>403897845</MsgID>
+<Status><![CDATA[send success]]></Status>
+<TotalCount>163</TotalCount>
+<FilterCount>163</FilterCount>
+<SentCount>163</SentCount>
+<ErrorCount>0</ErrorCount>
+</xml>
+
+2016-04-25 17:38:23 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-25 17:38:23 response :
+------------
+

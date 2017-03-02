@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>{if empty($item['aname'])}大家来领券{else}{$item['aname']}{/if}</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background: #000;
+        }
+        #bodybox {
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+            max-width: 640px;
+        }
+
+        /* 动画开始 */
+        @keyframes opacity-animation11{0%{opacity:0}100%{opacity:1}}@-moz-keyframes opacity-animation11{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes opacity-animation11{0%{opacity:0}100%{opacity:1}}@-o-keyframes opacity-animation11{0%{opacity:0}100%{opacity:1}}
+        @keyframes translate-animation11{0%{opacity:0;-ms-transform:translateX(-100%);-moz-transform:translateX(-100%);-webkit-transform:translateX(-100%);-o-transform:translateX(-100%);transform:translateX(-100%)}100%{opacity:1;-ms-transform:translateX(0%);-moz-transform:translateX(0%);-webkit-transform:translateX(0%);-o-transform:translateX(0%);transform:translateX(0%)}}@-moz-keyframes translate-animation11{0%{opacity:0;-ms-transform:translateX(-100%);-moz-transform:translateX(-100%);-webkit-transform:translateX(-100%);-o-transform:translateX(-100%);transform:translateX(-100%)}100%{opacity:1;-ms-transform:translateX(0%);-moz-transform:translateX(0%);-webkit-transform:translateX(0%);-o-transform:translateX(0%);transform:translateX(0%)}}@-webkit-keyframes translate-animation11{0%{opacity:0;-ms-transform:translateX(-100%);-moz-transform:translateX(-100%);-webkit-transform:translateX(-100%);-o-transform:translateX(-100%);transform:translateX(-100%)}100%{opacity:1;-ms-transform:translateX(0%);-moz-transform:translateX(0%);-webkit-transform:translateX(0%);-o-transform:translateX(0%);transform:translateX(0%)}}@-o-keyframes translate-animation11{0%{opacity:0;-ms-transform:translateX(-100%);-moz-transform:translateX(-100%);-webkit-transform:translateX(-100%);-o-transform:translateX(-100%);transform:translateX(-100%)}100%{opacity:1;-ms-transform:translateX(0%);-moz-transform:translateX(0%);-webkit-transform:translateX(0%);-o-transform:translateX(0%);transform:translateX(0%)}}
+        /* 动画结束 */
+        /* 音符css */
+        .musicImg{width:10%;position:absolute;right:10%;top:5%;z-index:10;opacity:.5}.musicAni{animation:bganim 1s linear 0s infinite;-moz-animation:bganim 1s linear 0s infinite;-webkit-animation:bganim 1s linear 0s infinite}.yinfu{width:3%;position:absolute;right:10%;top:5%;z-index:10;opacity:0}.yinfuImg1{-moz-animation:translate-animation 1s linear infinite;-webkit-animation:translate-animation 1s linear infinite;-o-animation:translate-animation 1s linear infinite;animation:translate-animation 1s linear infinite}.yinfuImg2{-moz-animation:translateL-animation 1s linear infinite;-webkit-animation:translateL-animation 1s linear infinite;-o-animation:translateL-animation 1s linear infinite;animation:translateL-animation 1s linear infinite}.yinfuImg3{-moz-animation:translateX-animation 1s linear infinite;-webkit-animation:translateX-animation 1s linear infinite;-o-animation:translateX-animation 1s linear infinite;animation:translateX-animation 1s linear infinite}@keyframes bganim{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}@-moz-keyframes bganim{from{-moz-transform:rotate(0deg)}to{-moz-transform:rotate(360deg)}}@-webkit-keyframes bganim{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}@keyframes translateX-animation{0%{opacity:0;-ms-transform:translateX(0%) rotate(0deg);-moz-transform:translateX(0%) rotate(0deg);-webkit-transform:translateX(0%) rotate(0deg);-o-transform:translateX(0%) rotate(0deg);transform:translateX(0%) rotate(0deg)}100%{opacity:1;-ms-transform:translateX(500%) rotate(360deg);-moz-transform:translateX(500%) rotate(360deg);-webkit-transform:translateX(500%) rotate(360deg);-o-transform:translateX(500%) rotate(360deg);transform:translateX(500%) rotate(360deg)}}@-moz-keyframes translateX-animation{0%{opacity:0;-ms-transform:translateX(0%) rotate(0deg);-moz-transform:translateX(0%) rotate(0deg);-webkit-transform:translateX(0%) rotate(0deg);-o-transform:translateX(0%) rotate(0deg);transform:translateX(0%) rotate(0deg)}100%{opacity:1;-ms-transform:translateX(500%) rotate(360deg);-moz-transform:translateX(500%) rotate(360deg);-webkit-transform:translateX(500%) rotate(360deg);-o-transform:translateX(500%) rotate(360deg);transform:translateX(500%) rotate(360deg)}}@-webkit-keyframes translateX-animation{0%{opacity:0;-ms-transform:translateX(0%) rotate(0deg);-moz-transform:translateX(0%) rotate(0deg);-webkit-transform:translateX(0%) rotate(0deg);-o-transform:translateX(0%) rotate(0deg);transform:translateX(0%) rotate(0deg)}100%{opacity:1;-ms-transform:translateX(500%) rotate(360deg);-moz-transform:translateX(500%) rotate(360deg);-webkit-transform:translateX(500%) rotate(360deg);-o-transform:translateX(500%) rotate(360deg);transform:translateX(500%) rotate(360deg)}}@-o-keyframes translateX-animation{0%{opacity:0;-ms-transform:translateX(0%) rotate(0deg);-moz-transform:translateX(0%) rotate(0deg);-webkit-transform:translateX(0%) rotate(0deg);-o-transform:translateX(0%) rotate(0deg);transform:translateX(0%) rotate(0deg)}100%{opacity:1;-ms-transform:translateX(500%) rotate(360deg);-moz-transform:translateX(500%) rotate(360deg);-webkit-transform:translateX(500%) rotate(360deg);-o-transform:translateX(500%) rotate(360deg);transform:translateX(500%) rotate(360deg)}}@keyframes translateL-animation{0%{opacity:0;-ms-transform:translate(0%,0%) rotate(0deg);-moz-transform:translate(0%,0%) rotate(0deg);-webkit-transform:translate(0%,0%) rotate(0deg);-o-transform:translate(0%,0%) rotate(0deg);transform:translate(0%,0%) rotate(0deg)}100%{opacity:1;-ms-transform:translate(-250%,-250%) rotate(360deg);-moz-transform:translate(-250%,-250%) rotate(360deg);-webkit-transform:translate(-250%,-250%) rotate(360deg);-o-transform:translate(-250%,-250%) rotate(360deg);transform:translate(-250%,-250%) rotate(360deg)}}@-moz-keyframes translateL-animation{0%{opacity:0;-ms-transform:translate(0%,0%) rotate(0deg);-moz-transform:translate(0%,0%) rotate(0deg);-webkit-transform:translate(0%,0%) rotate(0deg);-o-transform:translate(0%,0%) rotate(0deg);transform:translate(0%,0%) rotate(0deg)}100%{opacity:1;-ms-transform:translate(-250%,-250%) rotate(360deg);-moz-transform:translate(-250%,-250%) rotate(360deg);-webkit-transform:translate(-250%,-250%) rotate(360deg);-o-transform:translate(-250%,-250%) rotate(360deg);transform:translate(-250%,-250%) rotate(360deg)}}@-webkit-keyframes translateL-animation{0%{opacity:0;-ms-transform:translate(0%,0%) rotate(0deg);-moz-transform:translate(0%,0%) rotate(0deg);-webkit-transform:translate(0%,0%) rotate(0deg);-o-transform:translate(0%,0%) rotate(0deg);transform:translate(0%,0%) rotate(0deg)}100%{opacity:1;-ms-transform:translate(-250%,-250%) rotate(360deg);-moz-transform:translate(-250%,-250%) rotate(360deg);-webkit-transform:translate(-250%,-250%) rotate(360deg);-o-transform:translate(-250%,-250%) rotate(360deg);transform:translate(-250%,-250%) rotate(360deg)}}@-o-keyframes translateL-animation{0%{opacity:0;-ms-transform:translate(0%,0%) rotate(0deg);-moz-transform:translate(0%,0%) rotate(0deg);-webkit-transform:translate(0%,0%) rotate(0deg);-o-transform:translate(0%,0%) rotate(0deg);transform:translate(0%,0%) rotate(0deg)}100%{opacity:1;-ms-transform:translate(-250%,-250%) rotate(360deg);-moz-transform:translate(-250%,-250%) rotate(360deg);-webkit-transform:translate(-250%,-250%) rotate(360deg);-o-transform:translate(-250%,-250%) rotate(360deg);transform:translate(-250%,-250%) rotate(360deg)}}@keyframes translate-animation{0%{opacity:0;-ms-transform:translate(0%,0%) rotate(0deg);-moz-transform:translate(0%,0%) rotate(0deg);-webkit-transform:translate(0%,0%) rotate(0deg);-o-transform:translate(0%,0%) rotate(0deg);transform:translate(0%,0%) rotate(0deg)}100%{opacity:1;-ms-transform:translate(250%,-250%) rotate(360deg);-moz-transform:translate(250%,-250%) rotate(360deg);-webkit-transform:translate(250%,-250%) rotate(360deg);-o-transform:translate(250%,-250%) rotate(360deg);transform:translate(250%,-250%) rotate(360deg)}}@-moz-keyframes translate-animation{0%{opacity:0;-ms-transform:translate(0%,0%) rotate(0deg);-moz-transform:translate(0%,0%) rotate(0deg);-webkit-transform:translate(0%,0%) rotate(0deg);-o-transform:translate(0%,0%) rotate(0deg);transform:translate(0%,0%) rotate(0deg)}100%{opacity:1;-ms-transform:translate(250%,-250%) rotate(360deg);-moz-transform:translate(250%,-250%) rotate(360deg);-webkit-transform:translate(250%,-250%) rotate(360deg);-o-transform:translate(250%,-250%) rotate(360deg);transform:translate(250%,-250%) rotate(360deg)}}@-webkit-keyframes translate-animation{0%{opacity:0;-ms-transform:translate(0%,0%) rotate(0deg);-moz-transform:translate(0%,0%) rotate(0deg);-webkit-transform:translate(0%,0%) rotate(0deg);-o-transform:translate(0%,0%) rotate(0deg);transform:translate(0%,0%) rotate(0deg)}100%{opacity:1;-ms-transform:translate(250%,-250%) rotate(360deg);-moz-transform:translate(250%,-250%) rotate(360deg);-webkit-transform:translate(250%,-250%) rotate(360deg);-o-transform:translate(250%,-250%) rotate(360deg);transform:translate(250%,-250%) rotate(360deg)}}@-o-keyframes translate-animation{0%{opacity:0;-ms-transform:translate(0%,0%) rotate(0deg);-moz-transform:translate(0%,0%) rotate(0deg);-webkit-transform:translate(0%,0%) rotate(0deg);-o-transform:translate(0%,0%) rotate(0deg);transform:translate(0%,0%) rotate(0deg)}100%{opacity:1;-ms-transform:translate(250%,-250%) rotate(360deg);-moz-transform:translate(250%,-250%) rotate(360deg);-webkit-transform:translate(250%,-250%) rotate(360deg);-o-transform:translate(250%,-250%) rotate(360deg);transform:translate(250%,-250%) rotate(360deg)}}
+
+        /* 背景图 */
+        .imagebg{width: 100%;vertical-align: bottom;}
+
+        /* 分享图 */
+        #share-bg{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            display: none;
+            z-index: 100;
+        }
+
+        /* 顶部标题 */
+        .logo{width: 60%;left: 8%;top: 10%;position: absolute;}
+
+        /* 选择题begin */
+        .selectTitle{
+            color: #00a4e2;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 22%;
+            opacity: 0;
+            animation: opacity-animation11 1s linear 0.5s;
+            -moz-animation: opacity-animation11 1s linear 0.5s;     /* Firefox */
+            -webkit-animation: opacity-animation11 1s linear 0.5s;     /* Safari 和 Chrome */
+            -o-animation: opacity-animation11 1s linear 0.5s;     /* Opera */
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        .selectTitle33{
+            color: #00a4e2;
+            font-weight: bold;
+            width: 100%;
+            position: absolute;
+            left: 13%;
+            top: 22%;
+            opacity: 0;
+            animation: opacity-animation11 1s linear 0.5s;
+            -moz-animation: opacity-animation11 1s linear 0.5s;     /* Firefox */
+            -webkit-animation: opacity-animation11 1s linear 0.5s;     /* Safari 和 Chrome */
+            -o-animation: opacity-animation11 1s linear 0.5s;     /* Opera */
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        .selectContent{
+            width: 65%;
+            color: #00a4e2;
+            position: absolute;
+            top: 27%;
+            left: 17%;
+            opacity: 0;
+            animation: opacity-animation11 1s linear 1s;
+            -moz-animation: opacity-animation11 1s linear 1s;     /* Firefox */
+            -webkit-animation: opacity-animation11 1s linear 1s;     /* Safari 和 Chrome */
+            -o-animation: opacity-animation11 1s linear 1s;     /* Opera */
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        .selectContent>div{
+            padding: 3px;
+        }
+        .selectContent>div>img{
+            width: 7%;
+            margin-right: 5%;
+            vertical-align: middle;
+        }
+        .selectContent>div>label {
+            vertical-align: middle;
+        }
+        /* 选择题end */
+
+        /* 飞出图片 */
+        .milkcup11{position: absolute;width: 60%;right: 15%;top: 46%;opacity: 0;
+            -moz-animation: translate-animation11 1s linear 1.5s;     /* Firefox */
+            -webkit-animation: translate-animation11 1s linear 1.5s;     /* Safari 和 Chrome */
+            -o-animation: translate-animation11 1s linear 1.5s;     /* Opera */
+            animation: translate-animation11 1s linear 1.5s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        .milkcup22{position: absolute;width: 50%;right: 5%;top: 28%;opacity: 0;
+            -moz-animation: translate-animation11 1s linear 1.5s;     /* Firefox */
+            -webkit-animation: translate-animation11 1s linear 1.5s;     /* Safari 和 Chrome */
+            -o-animation: translate-animation11 1s linear 1.5s;     /* Opera */
+            animation: translate-animation11 1s linear 1.5s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        .milkcup33{position: absolute;width: 55%;right: 5%;top: 32%;opacity: 0;
+            -moz-animation: translate-animation11 1s linear 1.5s;     /* Firefox */
+            -webkit-animation: translate-animation11 1s linear 1.5s;     /* Safari 和 Chrome */
+            -o-animation: translate-animation11 1s linear 1.5s;     /* Opera */
+            animation: translate-animation11 1s linear 1.5s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        .milkcup44{position: absolute;width: 60%;right: 15%;top: 53%;opacity: 0;
+            -moz-animation: translate-animation11 1s linear 1.5s;     /* Firefox */
+            -webkit-animation: translate-animation11 1s linear 1.5s;     /* Safari 和 Chrome */
+            -o-animation: translate-animation11 1s linear 1.5s;     /* Opera */
+            animation: translate-animation11 1s linear 1.5s;
+            -webkit-animation-fill-mode: forwards;
+        }
+
+        /* 图片下的文本 */
+        .page_txt11{position: absolute;width: 83%;left: 10%;top: 65%;opacity: 0;
+            animation: opacity-animation11 1s linear 2.5s;
+            -moz-animation: opacity-animation11 1s linear 2.5s;     /* Firefox */
+            -webkit-animation: opacity-animation11 1s linear 2.5s;     /* Safari 和 Chrome */
+            -o-animation: opacity-animation11 1s linear 2.5s;     /* Opera */
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        .page_txt22{position: absolute;width: 83%;left: 10%;top: 56%;opacity: 0;
+            animation: opacity-animation11 1s linear 2.5s;
+            -moz-animation: opacity-animation11 1s linear 2.5s;     /* Firefox */
+            -webkit-animation: opacity-animation11 1s linear 2.5s;     /* Safari 和 Chrome */
+            -o-animation: opacity-animation11 1s linear 2.5s;     /* Opera */
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        .page_txt33{position: absolute;width: 83%;left: 10%;top: 55%;opacity: 0;
+            animation: opacity-animation11 1s linear 2.5s;
+            -moz-animation: opacity-animation11 1s linear 2.5s;     /* Firefox */
+            -webkit-animation: opacity-animation11 1s linear 2.5s;     /* Safari 和 Chrome */
+            -o-animation: opacity-animation11 1s linear 2.5s;     /* Opera */
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        .page_txt44{position: absolute;width: 83%;left: 10%;top: 70%;opacity: 0;
+            animation: opacity-animation11 1s linear 2.5s;
+            -moz-animation: opacity-animation11 1s linear 2.5s;     /* Firefox */
+            -webkit-animation: opacity-animation11 1s linear 2.5s;     /* Safari 和 Chrome */
+            -o-animation: opacity-animation11 1s linear 2.5s;     /* Opera */
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        .page_txt55{position: absolute;width: 83%;left: 10%;top: 55%;opacity: 0;
+            animation: opacity-animation11 1s linear 2s;
+            -moz-animation: opacity-animation11 1s linear 2s;     /* Firefox */
+            -webkit-animation: opacity-animation11 1s linear 2s;     /* Safari 和 Chrome */
+            -o-animation: opacity-animation11 1s linear 2s;     /* Opera */
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+
+        .notice{position: absolute;width: 100%;text-align: center;bottom: 12%;color: #00a4e2}
+        a:link{color: inherit;text-decoration: none}
+        a:visited{color: inherit;text-decoration: none}
+
+        /*邀请按钮*/
+        #invite{width: 56%;position: absolute;left: 22%;bottom: 17%;height: 40px;font-size: 20px;border: none;
+            background-color: #00a4e2;color: #fff;border-radius: 3px;opacity: 0.5}
+        /* 选择题ID */
+        #changeSelected1{display: none}
+        #changeSelected2{display: none}
+        #changeSelected3{display: none}
+        #changeSelected4{display: none}
+        #changeSelected5{display: none}
+        #select23{position: relative;}
+        #select56{position: relative;}
+        #select46{position: relative;}
+        #select32{position: relative;}
+        .select2Arrow{
+            width: 15%;
+            position: absolute;
+            left: -15%;
+            top: 28%;
+        }
+        #freeDiv{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.6);
+            display: none;
+        }
+        .freeDiv-juan{
+            width: 70%;
+            margin: 30% auto;
+            border:2px solid #7ad0f0;
+            border-radius: 20px;
+            padding-bottom: 20px;
+            background-color: #fff
+        }
+        .freeDiv-title{text-align: center;color: #35a4de}
+        .freeDiv-content{text-align: center;color: #35a4de}
+        .freeDiv-image{width: 80%;margin-top: 7%;margin-left: 10%}
+        .freeDiv-btn{
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 20%;
+            background-color: #00a4e2;
+            border-radius: 10px;
+            color: #fff;
+            text-align: center;
+            padding: 4% 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="bodybox">
+        {if empty($item['huodong_bg'])}
+        <img class="imagebg" src="../addons/jy_coupons/images/page1_bg.jpg"/>
+        {else}
+        <img class="imagebg" src="{$_W['attachurl']}{$item['huodong_bg']}"/>
+        {/if}
+        {if empty($item['huodong1'])}
+        <img class="logo" src="../addons/jy_coupons/images/logo.png"/>
+        {else}
+        <img class="logo" src="{$_W['attachurl']}{$item['huodong1']}"/>
+        {/if}
+        <!-- 选择题内容1 begin -->
+        <div id="changeSelected1" data-num="1">
+            <div class="selectTitle">你最想和朋友分享哪款原宿社酸奶？</div>
+            <div class="selectContent">
+                <div id="select11"><img class="quanquan" src="../addons/jy_coupons/images/selected.png"/><label>原宿酸奶</label></div>
+                <div id="select12"><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>原桃酸奶</label></div>
+                <div id="select13"><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>原莓酸奶</label></div>
+                <div id="select14"><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>原枣酸奶</label></div>
+            </div>
+
+            <img class="milkcup11" src="../addons/jy_coupons/images/milkcup.png"/>
+            <img class="page_txt11" src="../addons/jy_coupons/images/page1_txt.png"/>
+        </div>
+        <!-- 选择题内容1 end -->
+
+        <!-- 选择题内容2 begin -->
+        <div id="changeSelected2" data-num="2">
+            <div class="selectTitle">右图的原宿社店内区域名称是什么？</div>
+            <div class="selectContent">
+                <div id="select21"><img class="quanquan" src="../addons/jy_coupons/images/selected.png"/><label>分享说</label></div>
+                <div id="select22"><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>美丽说</label></div>
+                <div id="select23"><img class="select2Arrow" style="width:15%" src="../addons/jy_coupons/images/arrow.png"/><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>原宿说</label></div>
+            </div>
+
+            <img class="milkcup22" src="../addons/jy_coupons/images/image22.jpg"/>
+            <img class="page_txt22" src="../addons/jy_coupons/images/txt22.png"/>
+        </div>
+        <!-- 选择题内容2 end -->
+
+        <!-- 选择题内容3 begin -->
+        <div id="changeSelected3" data-num="3">
+            <div class="selectTitle33">原宿社目前有多少间分店？</div>
+            <div class="selectContent">
+                <div id="select31"><img class="quanquan" src="../addons/jy_coupons/images/selected.png"/><label>1间</label></div>
+                <div id="select32"><img class="select2Arrow" style="width:15%" src="../addons/jy_coupons/images/arrow.png"/><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>2间</label></div>
+                <div id="select33"><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>更多</label></div>
+            </div>
+
+            <img class="milkcup33" src="../addons/jy_coupons/images/image33.jpg"/>
+            <img class="page_txt33" src="../addons/jy_coupons/images/txt33.png"/>
+        </div>
+        <!-- 选择题内容3 end -->
+
+        <!-- 选择题内容4 begin -->
+        <div id="changeSelected4" data-num="4">
+            <div class="selectTitle">以下哪个不是原宿社杯子的主题？</div>
+            <div class="selectContent">
+                <div id="select41"><img class="quanquan" src="../addons/jy_coupons/images/selected.png"/><label>Lover（爱人）</label></div>
+                <div id="select42"><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>Class（同学）</label></div>
+                <div id="select43"><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>Partner（伙伴）</label></div>
+                <div id="select44"><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>Friend（朋友）</label></div>
+                <div id="select45"><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>Family（家庭）</label></div>
+                <div id="select46"><img class="select2Arrow" style="width:15%" src="../addons/jy_coupons/images/arrow.png"/><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>原宿社</label></div>
+            </div>
+
+            <img class="milkcup44" src="../addons/jy_coupons/images/milkcup.png"/>
+            <img class="page_txt44" src="../addons/jy_coupons/images/txt44.png"/>
+        </div>
+        <!-- 选择题内容4 end -->
+
+        <!-- 选择题内容5 begin -->
+        <div id="changeSelected5" data-num="5">
+            <div class="selectTitle">以下哪些是原宿社免费提供的服务？</div>
+            <div class="selectContent">
+                <div id="select51"><img class="quanquan" src="../addons/jy_coupons/images/selected.png"/><label>充电宝和充电线</label></div>
+                <div id="select52"><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>相片打印</label></div>
+                <div id="select53"><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>外借雨伞</label></div>
+                <div id="select54"><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>按摩椅</label></div>
+                <div id="select55"><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>《秘密花园》涂色</label></div>
+                <div id="select56"><img class="select2Arrow" style="width:15%" src="../addons/jy_coupons/images/arrow.png"/><img class="quanquan" src="../addons/jy_coupons/images/unselected.png"/><label>以上全是，还有其他未列出</label></div>
+            </div>
+            <img class="page_txt55" src="../addons/jy_coupons/images/txt55.png"/>
+        </div>
+        <!-- 选择题内容5 end -->
+
+        <!-- 邀请框 begin -->
+        <div id="freeDiv">
+            <div class="freeDiv-juan">
+                <h2 class="freeDiv-title">恭喜你</h2>
+                <div class="freeDiv-content">获得原宿社酸奶免费邀请资格！</div>
+                <img class="freeDiv-image" src="../addons/jy_coupons/images/freeticket.png"/>
+                <div class="freeDiv-btn" onclick="showShare()">马上邀请</div>
+            </div>
+        </div>
+        <!-- 邀请框 end -->
+
+        <img id="share-bg" src="../addons/jy_coupons/images/shareBg.jpg" onclick="hideShare()"/>
+
+        <audio src="../addons/jy_coupons/images/happytime.mp3" autoplay loop="loop"></audio>
+        <!-- 音乐符 -->
+        <img class="musicImg musicAni" src="../addons/jy_coupons/images/music.png" onclick="musicOnoff()"/>
+        <img class="yinfuImg1 yinfu" src="../addons/jy_coupons/images/yinfu.png"/>
+        <img class="yinfuImg2 yinfu" src="../addons/jy_coupons/images/yinfu.png"/>
+        <img class="yinfuImg3 yinfu" src="../addons/jy_coupons/images/yinfu.png"/>
+    </div>
+
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    var selectNum = 0;
+    window.onload = function(){
+        {if $ok==1}
+        $("#freeDiv").show();
+        {else}
+        var nextnum = 1+Math.floor(Math.random()*5);
+        $("#changeSelected"+nextnum).show();
+        {/if}
+    }
+    function showShare(){
+        $.ajax({
+            type: "POST",
+            url: "{php echo $this->createMobileurl('huodong',array('op'=>'add'))}",
+            data: {},
+            dataType: "text",
+            
+            success: function (d) {
+                if (d == "1") {
+                    document.getElementById("share-bg").style.display = "block";
+                }else {
+                
+                }
+            },
+            
+            error: function (xml, text, thrown) {
+                alert("出错啦!");
+            }
+        });
+    }
+    function hideShare(){
+        document.getElementById("share-bg").style.display = "none";
+    }
+    function changeSelect(object,zhi){
+        ++selectNum;
+        var obj = $(object).parent().parent();
+        var num = obj.data("num");
+
+        $.ajax({
+            type: "POST",
+            url: "{php echo $this->createMobileurl('huodong',array('op'=>'add2'))}",
+            data: {timu:num,zhi:zhi,},
+            dataType: "text",
+            
+            success: function (d) {
+                if (d == "1") {
+                    
+                }else {
+
+                }
+            },
+            
+            error: function (xml, text, thrown) {
+                alert("出错啦!");
+            }
+        });
+
+        if(selectNum >= 2){
+            $("#freeDiv").show();
+        }else{
+
+            var nextnum = 1+Math.floor(Math.random()*5);
+            while(nextnum == num) {
+                nextnum = 1 + Math.floor(Math.random() * 5);
+            }
+            obj.hide();
+            $("#changeSelected"+nextnum).show();
+        }
+    }
+
+    /* 选择题1 */
+    $("#select11").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        changeSelect(this,1);
+    });
+    $("#select12").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        changeSelect(this,2);
+    });
+    $("#select13").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        changeSelect(this,3);
+    });
+    $("#select14").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        changeSelect(this,4);
+    });
+
+    /* 选择题2 */
+    $("#select21").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,1);
+    });
+    $("#select22").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,2);
+    });
+    $("#select23").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        changeSelect(this,3);
+    });
+    /* 选择题3 */
+    $("#select31").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,1);
+    });
+    $("#select32").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        changeSelect(this,2);
+    });
+    $("#select33").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,3);
+    });
+    /* 选择题4 */
+    $("#select41").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,1);
+    });
+    $("#select42").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,2);
+    });
+    $("#select43").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,3);
+    });
+    $("#select44").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,4);
+    });
+    $("#select45").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,5);
+    });
+    $("#select46").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        changeSelect(this,6);
+    });
+    /* 选择题5 */
+    $("#select51").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,1);
+    });
+    $("#select52").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,2);
+    });
+    $("#select53").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,3);
+    });
+    $("#select54").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,4);
+    });
+    $("#select55").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        // changeSelect(this,5);
+    });
+    $("#select56").bind("click",function(){
+        $(this).children("img").attr("src","../addons/jy_coupons/images/selected.png");
+        $(this).siblings().children(".quanquan").attr("src","../addons/jy_coupons/images/unselected.png");
+        changeSelect(this,6);
+    });
+</script>
+<!-- 音乐 -->
+<script type="text/javascript">
+    var change = 0;
+    var audio=document.getElementsByTagName("audio")[0];
+    var musicImg=document.getElementsByClassName("musicImg")[0];
+    var yinfu1=document.getElementsByClassName("yinfuImg1")[0];
+    var yinfu2=document.getElementsByClassName("yinfuImg2")[0];
+    var yinfu3=document.getElementsByClassName("yinfuImg3")[0];
+    document.addEventListener("WeixinJSBridgeReady",function(){WeixinJSBridge.invoke("getNetworkType",{},function(e){audio.play()})},false);
+    function musicOnoff() {
+        if (change == 0) {
+            removeClass(musicImg, "musicAni");
+            yinfu1.style.display = "none";
+            yinfu2.style.display = "none";
+            yinfu3.style.display = "none";
+            audio.pause();
+            change = 1;
+        } else {
+            if (change == 1) {
+                addClass(musicImg, "musicAni");
+                yinfu1.style.display = "block";
+                yinfu2.style.display = "block";
+                yinfu3.style.display = "block";
+                audio.play();
+                change = 0;
+            }
+        }
+    }
+    // js 添加/删除class
+    function hasClass(elements,cName){return !!elements.className.match(new RegExp("(\\s|^)"+cName+"(\\s|$)"))}function addClass(elements,cName){if(!hasClass(elements,cName)){elements.className+=" "+cName}}function removeClass(elements,cName){if(hasClass(elements,cName)){elements.className=elements.className.replace(new RegExp("(\\s|^)"+cName+"(\\s|$)")," ")}};
+</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    {php $signPackage=$_W['account']['jssdkconfig'];}   
+    <script>
+
+    var appid = '{$_W['account']['jssdkconfig']['appId']}';
+    var timestamp = '{$_W['account']['jssdkconfig']['timestamp']}';
+    var nonceStr = '{$_W['account']['jssdkconfig']['nonceStr']}';
+    var signature = '{$_W['account']['jssdkconfig']['signature']}';
+
+    wx.config({
+        debug: false,   
+        appId: appid,
+        timestamp: timestamp,
+        nonceStr: nonceStr,
+        signature: signature,
+        jsApiList: ['checkJsApi','onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo',]
+    });
+
+    wx.ready(function () {
+        var shareData = {
+            {if empty($item['share_title'])}
+            title: "大家来领券",
+            {else}
+            title: "{$item['share_title']}",
+            {/if}
+            {if empty($item['share_desc'])}
+            desc: "大家来领券",
+            {else}
+            desc: "{$item['share_desc']}",
+            {/if}
+            link: "{php echo $_W['siteroot'].'app/'.$this->createMobileUrl('friend',array('member_id'=>$uid))}",
+            {if !empty($item['share_logo'])}
+            imgUrl: "{$_W['attachurl']}{$item['share_logo']}",
+            {else}
+            imgUrl: "{$_W['siteroot']}addons/jy_coupons/icon.jpg",
+            {/if}
+            trigger: function (res) {},
+            complete: function (res) {},
+            success: function (res) {
+                
+                },
+            cancel: function (res) {
+               
+            },
+            fail: function (res) {}
+        };
+        wx.onMenuShareTimeline(shareData);
+        wx.onMenuShareAppMessage(shareData);
+        wx.onMenuShareQQ(shareData);
+        wx.onMenuShareWeibo(shareData);
+
+    });
+    </script>
+</body>
+</html>

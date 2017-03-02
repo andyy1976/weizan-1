@@ -1,0 +1,117 @@
+{template 'common/header-wechat'}
+<div class="bandwechat updatepwd">
+
+    <img src="./resource/images/powerlong-logo.png" alt="">
+
+    <table cellpadding="5">
+        <tr>
+            <td class="tright">卡号:</td>
+            <td class="tleft"><input type="text" name="card_no" disabled value="{$bind_msg['card_no']}" class="card_no" ></td>
+            <input type="hidden" class="openid" name="openid" value="{$bind_msg['openid']}">
+            <td></td>
+        </tr>
+            <tr><td>&nbsp;</td></tr>
+        <tr>
+            <td class="tright">旧密码:</td>
+            <td class="tleft"><input type="password" pattern="[0-9]*" name="bepassword" class="bepass" ></td>
+        </tr>
+            <tr><td>&nbsp;</td></tr>
+        <tr>
+            <td class="tright">新密码:</td>
+            <td class="tleft"><input type="password" pattern="[0-9]*" name="newpassword" class="newpass" placeholder="请输入6位数字"></td>
+        </tr>
+            <tr><td>&nbsp;</td></tr>
+        <tr>
+            <td class="tright">确认新密码:</td>
+            <td class="tleft"><input type="password" pattern="[0-9]*" name="repassword" class="repass" ></td>
+        </tr>
+            <tr><td>&nbsp;</td></tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" class="band-button" value="修改"></td>
+        </tr>
+    </table>
+</div>
+
+<div class="copyright ">
+    <p>Copyright © 2015-2016 Powerlong Real Estate Holdings</p>
+    <p>Limited All rights reserved. 沪ICP备15034132号</p>
+</div>
+
+
+<script>
+
+    $('.bepass').on('blur',function(){
+        var card_no = $('.card_no').val(),
+            openid = $('.openid').val(),
+            card_mm = $('.bepass').val();
+        $.ajax({
+            type : "post",
+            url : "/web/index.php?c=user&a=updatepwd&do=checkbeforpwd&ajaxs=ajax&openid="+ openid,
+            data : "card_no=" + card_no + "&card_mm=" + card_mm,
+            dateType : 'json',
+            success : function(data){
+               if(data == 1 ){
+                   $('.bepass').css({ 'border' : '1px solid #929292'});
+                   $('.band-button').removeAttr('disabled');
+               }else{
+                   $('.bepass').css({ 'border' : '1px solid #ff0000'});
+                   $('.band-button').attr({'disabled' : 'true'});
+               }
+            }
+        });
+    });
+
+
+    $('.newpass').on('blur',function(){
+        var card_mm = $('.bepass').val(),
+            pwd2 = $('.newpass').val();
+        if(card_mm == pwd2){
+            $('.newpass').css({ 'border' : '1px solid #ff0000'});
+            $('.band-button').attr({'disabled' : 'true'});
+        }else if(pwd2.match(/^\d{6}$/) == null){
+            $('.newpass').css({ 'border' : '1px solid #ff0000'});
+            $('.band-button').attr({'disabled' : 'true'});
+        }else{
+            $('.newpass').css({ 'border' : '1px solid #929292'});
+            $('.band-button').removeAttr('disabled');
+        }
+    });
+
+    $('.repass').on('blur',function(){
+        var pwd2 = $('.newpass').val(),
+            pwd3 = $('.repass').val();
+        if(pwd2 != pwd3){
+            $('.repass').css({ 'border' : '1px solid #ff0000'});
+            $('.band-button').attr({'disabled' : 'true'});
+        }else{
+            $('.repass').css({ 'border' : '1px solid #929292'});
+            $('.band-button').removeAttr('disabled');
+        }
+    });
+
+    $('.band-button').on('click',function(){
+        var card_no = $('.card_no').val(),
+            openid = $('.openid').val(),
+            pwd1 = $('.bepass').val(),
+            pwd2 = $('.newpass').val(),
+            pwd3 = $('.repass').val();
+        $.ajax({
+            type : "post",
+            url : "/web/index.php?c=user&a=updatepwd&do=save&ajaxs=ajax&openid="+ openid,
+            data : "card_no=" + card_no + "&pwd1=" + pwd1 + "&pwd2=" + pwd2 + "&pwd3=" + pwd3,
+            dateType : 'json',
+            success : function(data){
+                if(data == 1){
+                     alert('密码修改成功');
+//                     window.location.href="{url 'user/updatepwd&gd=gd'}";
+                    location.reload();
+                }else{
+                    alert('密码修改失败');
+                }
+            }
+        });
+    });
+
+    $('title').html('修改密码');
+</script>

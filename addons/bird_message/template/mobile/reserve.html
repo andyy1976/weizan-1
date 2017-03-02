@@ -1,0 +1,56 @@
+﻿{template 'common/header'}
+<link rel="stylesheet" href="{$_W['siteroot']}addons/bird_message/css/style.css" media="screen" type="text/css" />
+<script type="text/javascript">    
+function textdown(e) {
+    textevent = e;
+    if (textevent.keyCode == 8) {
+        return;
+    }
+    if (document.getElementById('textarea').value.length >= 100) {
+        
+        if (!document.all) {
+            textevent.preventDefault();
+        } else {
+            textevent.returnValue = false;
+        }
+    }
+}
+function textup() {
+    var s = document.getElementById('textarea').value;
+    //判断ID为text的文本区域字数是否超过100个 
+    if (s.length > 100) {
+        document.getElementById('textarea').value = s.substring(0, 100);
+    }
+}
+</script>
+
+{php $myheadtitle = '产品采购'}
+<div class="container">
+  <form id="contact" action="{php echo $this->createMobileUrl('add');}" method="post" name="form1">
+    <h4>采购产品</h4>
+    <fieldset>
+      <input placeholder="请输入您的姓名" type="text" tabindex="1" name=data[name] required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="请输入您的手机号"  name=data[tel] type="text" tabindex="2" required>
+    </fieldset>
+   <fieldset>
+    <ul id="product">
+    </ul>
+    <a href="#" class="tianjia">+</a> <BR>
+     
+    </fieldset>
+   <div>
+	  <input name="token" type="hidden" value="{$_W['token']}" />
+          <input class="button" type="submit" value="提&nbsp;&nbsp;&nbsp;&nbsp交">
+      </div>
+    
+  </form>
+
+</div>
+
+
+
+<script type="text/javascript" src="{$_W['siteroot']}addons/bird_message/js/jquery.min.2.js"></script> 
+<script type="text/javascript" src="{$_W['siteroot']}addons/bird_message/js/pro.js"></script> 
+{template 'common/footer'}

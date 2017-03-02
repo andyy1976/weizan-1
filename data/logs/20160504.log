@@ -1,0 +1,210 @@
+2016-05-04 10:34:58 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw-SCWmbgJFCliUV_fXGVLos]]></FromUserName>
+<CreateTime>1462329298</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[超级刮刮乐]]></Content>
+<MsgId>6280656511296653662</MsgId>
+</xml>
+
+2016-05-04 10:34:58 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-05-04 10:34:58 response :
+------------
+
+2016-05-04 10:35:33 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw-SCWmbgJFCliUV_fXGVLos]]></FromUserName>
+<CreateTime>1462329333</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[超级刮刮乐]]></Content>
+<MsgId>6280656661620509023</MsgId>
+</xml>
+
+2016-05-04 10:35:33 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-05-04 10:35:33 response :
+------------
+
+2016-05-04 10:39:35 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw-SCWmbgJFCliUV_fXGVLos]]></FromUserName>
+<CreateTime>1462329575</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[超级刮刮乐]]></Content>
+<MsgId>6280657701002594674</MsgId>
+</xml>
+
+2016-05-04 10:39:35 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-05-04 10:39:35 response :
+------------
+
+2016-05-04 11:10:52 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw-SCWmbgJFCliUV_fXGVLos]]></FromUserName>
+<CreateTime>1462331452</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[抽奖]]></Content>
+<MsgId>6280665762656209932</MsgId>
+</xml>
+
+2016-05-04 11:10:52 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-05-04 11:10:52 response :
+------------
+
+2016-05-04 11:12:59 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw-SCWmbgJFCliUV_fXGVLos]]></FromUserName>
+<CreateTime>1462331579</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[幸运大抽奖]]></Content>
+<MsgId>6280666308117056572</MsgId>
+</xml>
+
+2016-05-04 11:12:59 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-05-04 11:12:59 response :
+------------
+
+2016-05-04 11:15:54 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw-SCWmbgJFCliUV_fXGVLos]]></FromUserName>
+<CreateTime>1462331754</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[幸运大抽奖]]></Content>
+<MsgId>6280667059736333459</MsgId>
+</xml>
+
+2016-05-04 11:15:54 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-05-04 11:15:54 response :
+------------
+
+2016-05-04 11:29:17 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw-SCWmbgJFCliUV_fXGVLos]]></FromUserName>
+<CreateTime>1462332552</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[幸运大抽奖]]></Content>
+<MsgId>6280670487120235948</MsgId>
+</xml>
+
+2016-05-04 11:29:17 params :
+------------
+Array:
+message : Array ;
+module : hx_lottery ;
+rule : 23 ;
+priority : 255 ;
+keyword : Array ;
+
+2016-05-04 11:29:17 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw-SCWmbgJFCliUV_fXGVLos ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-05-04 14:48:24 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw-SCWmbgJFCliUV_fXGVLos]]></FromUserName>
+<CreateTime>1462344504</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[抽奖]]></Content>
+<MsgId>6280721820569363328</MsgId>
+</xml>
+
+2016-05-04 14:48:24 params :
+------------
+Array:
+message : Array ;
+module : hx_lottery ;
+rule : 24 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-05-04 14:48:24 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw-SCWmbgJFCliUV_fXGVLos ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-05-04 16:09:48 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwz8DjMTSD9FRwpx3seEKrl8]]></FromUserName>
+<CreateTime>1462349389</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[MASSSENDJOBFINISH]]></Event>
+<MsgID>404023365</MsgID>
+<Status><![CDATA[send success]]></Status>
+<TotalCount>171</TotalCount>
+<FilterCount>171</FilterCount>
+<SentCount>171</SentCount>
+<ErrorCount>0</ErrorCount>
+</xml>
+
+2016-05-04 16:09:48 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-05-04 16:09:48 response :
+------------
+

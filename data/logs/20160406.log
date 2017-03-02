@@ -1,0 +1,62 @@
+2016-04-06 07:26:51 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw4LTYMN01mlxl_XNrwr5N64]]></FromUserName>
+<CreateTime>1459898811</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-06 07:26:51 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-06 07:26:51 response :
+------------
+
+2016-04-06 14:28:12 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwz8DjMTSD9FRwpx3seEKrl8]]></FromUserName>
+<CreateTime>1459924092</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[MASSSENDJOBFINISH]]></Event>
+<MsgID>402704525</MsgID>
+<Status><![CDATA[send success]]></Status>
+<TotalCount>155</TotalCount>
+<FilterCount>155</FilterCount>
+<SentCount>155</SentCount>
+<ErrorCount>0</ErrorCount>
+</xml>
+
+2016-04-06 14:28:12 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-06 14:28:12 response :
+------------
+
+2016-04-06 15:28:44 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1459927884</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2016-04-06 15:28:44 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-06 15:28:44 response :
+------------
+

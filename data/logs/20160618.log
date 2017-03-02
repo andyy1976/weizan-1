@@ -1,0 +1,258 @@
+2016-06-18 06:59:42 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_87c9b624047c]]></ToUserName>
+<FromUserName><![CDATA[oKap7wZOeuQV60CpcMk7avIvBM10]]></FromUserName>
+<CreateTime>1466204382</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-06-18 06:59:42 params :
+------------
+Array:
+message : Array ;
+module : news ;
+rule : 55 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-06-18 06:59:42 response :
+------------
+Array:
+FromUserName : gh_87c9b624047c ;
+ToUserName : oKap7wZOeuQV60CpcMk7avIvBM10 ;
+MsgType : news ;
+ArticleCount : 3 ;
+Articles : Array ;
+
+2016-06-18 07:05:43 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_87c9b624047c]]></ToUserName>
+<FromUserName><![CDATA[oKap7wZOeuQV60CpcMk7avIvBM10]]></FromUserName>
+<CreateTime>1466204743</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[大转盘]]></EventKey>
+</xml>
+
+2016-06-18 07:05:43 params :
+------------
+Array:
+message : Array ;
+module : wdl_bigwheel ;
+rule : 50 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-06-18 07:05:43 response :
+------------
+Array:
+FromUserName : gh_87c9b624047c ;
+ToUserName : oKap7wZOeuQV60CpcMk7avIvBM10 ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-06-18 07:06:16 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_87c9b624047c]]></ToUserName>
+<FromUserName><![CDATA[oKap7wZOeuQV60CpcMk7avIvBM10]]></FromUserName>
+<CreateTime>1466204775</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[每天摇一摇]]></EventKey>
+</xml>
+
+2016-06-18 07:06:16 params :
+------------
+Array:
+message : Array ;
+module : mon_qmshake ;
+rule : 54 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-06-18 07:06:16 response :
+------------
+Array:
+FromUserName : gh_87c9b624047c ;
+ToUserName : oKap7wZOeuQV60CpcMk7avIvBM10 ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-06-18 08:37:31 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_87c9b624047c]]></ToUserName>
+<FromUserName><![CDATA[oKap7wVd55ajnktFTfmcPoEPNMLU]]></FromUserName>
+<CreateTime>1466210251</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[大转盘]]></EventKey>
+</xml>
+
+2016-06-18 08:37:31 params :
+------------
+Array:
+message : Array ;
+module : wdl_bigwheel ;
+rule : 50 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-06-18 08:37:31 response :
+------------
+Array:
+FromUserName : gh_87c9b624047c ;
+ToUserName : oKap7wVd55ajnktFTfmcPoEPNMLU ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-06-18 08:37:58 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_87c9b624047c]]></ToUserName>
+<FromUserName><![CDATA[oKap7wVd55ajnktFTfmcPoEPNMLU]]></FromUserName>
+<CreateTime>1466210278</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-06-18 08:39:09 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_87c9b624047c]]></ToUserName>
+<FromUserName><![CDATA[oKap7wVd55ajnktFTfmcPoEPNMLU]]></FromUserName>
+<CreateTime>1466210349</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-06-18 08:39:09 params :
+------------
+Array:
+message : Array ;
+module : news ;
+rule : 55 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-06-18 08:39:09 response :
+------------
+Array:
+FromUserName : gh_87c9b624047c ;
+ToUserName : oKap7wVd55ajnktFTfmcPoEPNMLU ;
+MsgType : news ;
+ArticleCount : 3 ;
+Articles : Array ;
+
+2016-06-18 08:39:14 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_87c9b624047c]]></ToUserName>
+<FromUserName><![CDATA[oKap7wVd55ajnktFTfmcPoEPNMLU]]></FromUserName>
+<CreateTime>1466210354</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[每天摇一摇]]></EventKey>
+</xml>
+
+2016-06-18 08:39:14 params :
+------------
+Array:
+message : Array ;
+module : mon_qmshake ;
+rule : 54 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-06-18 08:39:14 response :
+------------
+Array:
+FromUserName : gh_87c9b624047c ;
+ToUserName : oKap7wVd55ajnktFTfmcPoEPNMLU ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-06-18 08:40:21 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_87c9b624047c]]></ToUserName>
+<FromUserName><![CDATA[oKap7wVd55ajnktFTfmcPoEPNMLU]]></FromUserName>
+<CreateTime>1466210421</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[大转盘]]></EventKey>
+</xml>
+
+2016-06-18 08:40:21 params :
+------------
+Array:
+message : Array ;
+module : wdl_bigwheel ;
+rule : 50 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-06-18 08:40:21 response :
+------------
+Array:
+FromUserName : gh_87c9b624047c ;
+ToUserName : oKap7wVd55ajnktFTfmcPoEPNMLU ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-06-18 15:01:47 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_87c9b624047c]]></ToUserName>
+<FromUserName><![CDATA[oKap7wUze0CfqoMJHSW9r2Z48Pmg]]></FromUserName>
+<CreateTime>1466233307</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://show.artels.cn/v-U70510PXM38WA3X5?eqrcode=1]]></EventKey>
+<MenuId>503253745</MenuId>
+</xml>
+
+2016-06-18 15:01:47 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-18 15:01:47 response :
+------------
+
+2016-06-18 20:14:46 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw_g1pWM_mGiB2xeA7cupdS8]]></FromUserName>
+<CreateTime>1466252085</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzI3ODA4NTQwNw==&mid=400575959&idx=1&sn=cd9388040793615cae056826bddac700&scene=18#wechat_redirect]]></EventKey>
+<MenuId>401838942</MenuId>
+</xml>
+
+2016-06-18 20:14:46 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-18 20:14:46 response :
+------------
+

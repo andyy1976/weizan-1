@@ -1,0 +1,50 @@
+2016-05-24 12:40:38 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw9_3iPZPpnBjM9BhavCPg14]]></FromUserName>
+<CreateTime>1464064838</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-05-24 12:40:38 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-05-24 12:40:38 response :
+------------
+
+2016-05-24 22:28:15 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_87c9b624047c]]></ToUserName>
+<FromUserName><![CDATA[oKap7wQmLfoQ4YSzy1FMSz0-utHc]]></FromUserName>
+<CreateTime>1464100095</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[刮刮卡]]></EventKey>
+</xml>
+
+2016-05-24 22:28:15 params :
+------------
+Array:
+message : Array ;
+module : stonefish_scratch ;
+rule : 48 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-05-24 22:28:15 response :
+------------
+Array:
+FromUserName : gh_87c9b624047c ;
+ToUserName : oKap7wQmLfoQ4YSzy1FMSz0-utHc ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+

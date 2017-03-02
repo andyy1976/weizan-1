@@ -1,0 +1,55 @@
+{template 'common/header-wechat'}
+<div class="bandwechat usermsg">
+    <img src="./resource/images/powerlong-logo.png" alt="">
+    <table cellpadding="5">
+        <tr>
+            <td class="tright">姓名:</td>
+            <td class="tleft">{$userInfo['name']}</td>
+        </tr>
+        <tr>
+            <td class="tright">性别:</td>
+            <td class="tleft">{$userInfo['sex']}</td>
+        </tr>
+        <tr>
+            <td class="tright">出生日期:</td>
+            <td class="tleft">{$userInfo['birth']}</td>
+        </tr>
+        <tr>
+            <td class="tright">公司名称:</td>
+            <td class="tleft">{$userInfo['company']}</td>
+        </tr>
+        <tr>
+            <td class="tright">电话号码:</td>
+            <td class="tleft">{$userInfo['phone']}</td>
+        </tr>
+        <tr>
+            <td class="tright">手机号码:</td>
+            <td class="tleft">{$userInfo['moblie']}</td>
+        </tr>
+        <tr>
+            <td class="tright">通信地址:</td>
+            <td class="tleft">{$userInfo['address']}</td>
+        </tr>
+        <tr>
+            <td class="tright">邮箱地址:</td>
+            <td class="tleft">{$userInfo['email']}</td>
+        </tr>
+        <tr>
+            <td class="tright">邮编号码:</td>
+            <td class="tleft">{$userInfo['postcode']}</td>
+        </tr>
+        <tr>
+            <td class="tright">会员卡号:</td>
+            <td class="tleft">{$userInfo['cardno']}</td>
+        </tr>
+    </table>
+
+</div>
+
+<div class="copyright ">
+    <p>Copyright © 2015-2016 Powerlong Real Estate Holdings</p>
+    <p>Limited All rights reserved. 沪ICP备15034132号</p>
+</div>
+<script>
+    $('title').html('我的信息');
+</script>

@@ -1,0 +1,108 @@
+<?php defined('IN_IA') or exit('Access Denied');?><?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('common/header', TEMPLATE_INCLUDEPATH)) : (include template('common/header', TEMPLATE_INCLUDEPATH));?>
+
+<script type="text/javascript" src="resource/js/lib/jquery-1.11.1.min.js"></script>
+<style>
+.album_list{overflow:hidden; list-style: none; padding:0; margin:0;}
+.album_list li{border:1px #DDD solid; width:232px; float:left; margin-right:15px; margin-bottom:10px;padding:4px;}
+.album_list li .album_pic{display:block; width:224px; height:130px; overflow:hidden;}
+.album_list li .album_pic img{display:block; height:129px; margin:0 auto;}
+.album_list li .album_main{padding:10px; overflow:hidden;}
+.album_list li .album_main .album_title{font-size:16px; height:20px; width:217px; overflow:hidden;}
+.album_list li .album_main .pull-left{color:#999;}
+.album_manage .table th{width:120px;}
+.album_manage #albums_head img{margin-right:10px; max-height:70px;}
+</style>
+<div class="panel-body table-responsive">
+					<?php  echo $pager;?>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th style="width:40px;">排名</th>
+								<th style="width:40px;">编号</th>
+								<th style="width:120px;">图　片</th>
+								<th style="width:80px;">姓　名</th>
+								<th style="width:100px;">电　话</th>
+								<th style="width:80px;">状态</th>
+								<th style="width:60px;">点赞数</th>
+								<th style="width:150px;">时间</th>
+								<th style="width:80px;">操作</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+						<?php  if(is_array($listdata)) { foreach($listdata as $row) { ?>
+						<tr>
+						<?php  if(count($listdata) > 0) { ?>
+							<td><div class="type-parent"><?php  echo $row['sort'];?>&nbsp;&nbsp;
+
+								</div></td>
+							<td>
+								<div class="type-parent"><?php  echo $row['showID'];?>&nbsp;&nbsp;
+
+								</div>
+								</td>
+							<td>
+								<img src="<?php  echo $row['imgurl'];?>" width ="110" height="80"/>
+							</td>
+							<td>
+								<div class="type-parent"><?php  echo $row['uname'];?>&nbsp;&nbsp;</div>
+							</td>
+							<td>
+								<div class="type-parent"><?php  echo $row['phone'];?>&nbsp;&nbsp;</div>
+							</td>
+
+							<td>
+								<?php  if($row['status']==1) { ?>
+								<span class='label label-success'>显示</span>
+								<?php  } else { ?>
+								<span class='label label-danger'>隐藏</span>
+								<?php  } ?>
+							</td>
+							<input type="hidden" name="id" value="<?php  echo $row['id'];?>" />
+							<td>
+								<img src="./resource/attachment/<?php  echo $row['thumb'];?>" width='50' height="50" onerror="$(this).remove()" style='padding:1px;border: 1px solid #ccc;float:left;' />
+								<div class="type-parent"><?php  echo $row['likeNum'];?>&nbsp;&nbsp;
+
+								</div>
+							</td>
+							<td>
+								<img src="./resource/attachment/<?php  echo $row['thumb'];?>" width='50' height="50" onerror="$(this).remove()" style='padding:1px;border: 1px solid #ccc;float:left;' />
+								<div class="type-parent"><?php  echo $row['time'];?>&nbsp;&nbsp;
+
+								</div>
+							</td>
+							<td>
+								<a href="<?php  echo $this->createWebUrl('delete', array('op' => 'edit', 'id' => $row['id']))?>" onclick="return confirm('确认显示此图片吗？');return false;" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" title="显示"><i class="fa fa-eye"></i></a>
+								<a href="<?php  echo $this->createWebUrl('delete', array('op' => 'delete', 'id' => $row['id']))?>" onclick="return confirm('确认隐藏此图片吗？');return false;" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" title="隐藏"><i class="fa fa-eye-slash"></i></a>
+								<a href="<?php  echo $this->createWebUrl('delete', array('op' => 'reldelete', 'id' => $row['id']))?>" onclick="return confirm('确认删除此图片吗？');return false;" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" title="隐藏"><i class="fa fa-remove"></i></a>
+							</td>
+							<?php  } ?>
+						</tr>
+						<?php  } } ?>
+						</tbody>
+						
+					</table>
+					<?php  echo $pager;?>
+				</div>
+<div id='msg'></div>
+<script language="javascript">
+function ajaxopen(url) {
+	$.get(url+'&time='+new Date().getTime(), function(data){ 
+                        $("#msg").html(data);
+	});	
+	return false;
+}
+var category = <?php  echo json_encode($children)?>;
+function fetchChildCategory(cid) {
+	var html = '<option value="0">请选择二级分类</option>';
+	if (!category || !category[cid]) {
+		$('#cate_2').html(html);
+		return false;
+	}
+	for (i in category[cid]) {
+		html += '<option value="'+category[cid][i][0]+'">'+category[cid][i][1]+'</option>';
+	}
+	$('#cate_2').html(html);
+}
+</script>
+<?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('common/footer', TEMPLATE_INCLUDEPATH)) : (include template('common/footer', TEMPLATE_INCLUDEPATH));?>

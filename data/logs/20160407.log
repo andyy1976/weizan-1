@@ -1,0 +1,21 @@
+2016-04-07 00:29:45 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw_pw2rvw01KkMXC4byh3YSI]]></FromUserName>
+<CreateTime>1459960185</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-07 00:29:45 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-07 00:29:45 response :
+------------
+

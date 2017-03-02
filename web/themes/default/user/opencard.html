@@ -1,0 +1,39 @@
+{template 'common/header-wechat'}
+<div class="bandwechat">
+
+    <img src="./resource/images/powerlong-logo.png" alt="">
+
+    <table cellpadding="5">
+        <form action="/web/index.php?c=user&a=opencard&do=open" method="post" >
+            <tr class="top10">
+                <td>会员卡号码：</td>
+                <td><input type="text" name="card" disabled  value="{$bind_msg['card_no']}" ></td>
+                <input type="hidden" name="card_no"   value="{$bind_msg['card_no']}" >
+                <input type="hidden" class="openid" name="openid" value="{$bind_msg['openid']}">
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr class="top10">
+                <td>会员卡密码：</td>
+                <td><input type="password" name="card_pwd" pattern="[0-9]*" value="888888" ></td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr class="top10">
+                <td>身份证号码：</td>
+                <td><input tyep="text" name="id_no" pattern="[0-9]*" value="410926199305091231" </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="开通" class="band-button" ></td>
+            </tr>
+        </form>
+    </table>
+
+</div>
+
+<div class="copyright ">
+    <p>Copyright © 2015-2016 Powerlong Real Estate Holdings</p>
+    <p>Limited All rights reserved. 沪ICP备15034132号</p>
+</div>
+<script>
+    $('title').html('开通会员卡');
+</script>

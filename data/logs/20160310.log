@@ -1,0 +1,48 @@
+2016-03-10 11:26:57 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw8ei0qcxUBqwbP2s-hew0wU]]></FromUserName>
+<CreateTime>1457580417</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzI3ODA4NTQwNw==&mid=401461109&idx=2&sn=f945c784441c753111a0560d8748c346&scene=18#wechat_redirect]]></EventKey>
+<MenuId>401838942</MenuId>
+</xml>
+
+2016-03-10 11:26:57 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-03-10 11:26:57 response :
+------------
+
+2016-03-10 14:26:24 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwz8DjMTSD9FRwpx3seEKrl8]]></FromUserName>
+<CreateTime>1457591184</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[MASSSENDJOBFINISH]]></Event>
+<MsgID>402031874</MsgID>
+<Status><![CDATA[send success]]></Status>
+<TotalCount>133</TotalCount>
+<FilterCount>133</FilterCount>
+<SentCount>133</SentCount>
+<ErrorCount>0</ErrorCount>
+</xml>
+
+2016-03-10 14:26:24 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-03-10 14:26:24 response :
+------------
+

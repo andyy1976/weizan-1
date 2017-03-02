@@ -1,0 +1,544 @@
+2016-04-21 15:08:54 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduFVfsnO8dSTrbZVzGkuKj8A]]></FromUserName>
+<CreateTime>1461222534</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:09:07 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduFVfsnO8dSTrbZVzGkuKj8A]]></FromUserName>
+<CreateTime>1461222547</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:09:12 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-21 15:09:12 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduFVfsnO8dSTrbZVzGkuKj8A ;
+MsgType : text ;
+Content : 恭喜您领到一个红包了！ ;
+
+2016-04-21 15:14:03 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduPBlg-mGd9RkncFlDFkycWY]]></FromUserName>
+<CreateTime>1461222843</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:14:08 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduPBlg-mGd9RkncFlDFkycWY]]></FromUserName>
+<CreateTime>1461222843</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:14:09 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-21 15:14:09 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduPBlg-mGd9RkncFlDFkycWY ;
+MsgType : text ;
+Content : 恭喜您领到一个红包了！ ;
+
+2016-04-21 15:14:10 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-21 15:14:10 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduPBlg-mGd9RkncFlDFkycWY ;
+MsgType : text ;
+Content : 出错，未能领到红包:( ;
+
+2016-04-21 15:14:50 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduFVfsnO8dSTrbZVzGkuKj8A]]></FromUserName>
+<CreateTime>1461222890</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:15:06 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduFVfsnO8dSTrbZVzGkuKj8A]]></FromUserName>
+<CreateTime>1461222906</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:15:06 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-21 15:15:06 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduFVfsnO8dSTrbZVzGkuKj8A ;
+MsgType : text ;
+Content : 您已经领过红包了！ ;
+
+2016-04-21 15:15:14 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduBMc7uTI2nq3ry9jLEwCoWI]]></FromUserName>
+<CreateTime>1461222914</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:15:21 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduBMc7uTI2nq3ry9jLEwCoWI]]></FromUserName>
+<CreateTime>1461222921</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:15:21 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-21 15:15:21 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduBMc7uTI2nq3ry9jLEwCoWI ;
+MsgType : text ;
+Content : 恭喜您领到一个红包了！ ;
+
+2016-04-21 15:16:59 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduPBlg-mGd9RkncFlDFkycWY]]></FromUserName>
+<CreateTime>1461223019</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:17:22 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduPBlg-mGd9RkncFlDFkycWY]]></FromUserName>
+<CreateTime>1461223042</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:17:22 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-21 15:17:22 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduPBlg-mGd9RkncFlDFkycWY ;
+MsgType : text ;
+Content : 您已经领过红包了！ ;
+
+2016-04-21 15:19:18 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduFVfsnO8dSTrbZVzGkuKj8A]]></FromUserName>
+<CreateTime>1461223158</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:19:40 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduFVfsnO8dSTrbZVzGkuKj8A]]></FromUserName>
+<CreateTime>1461223180</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:19:40 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-21 15:19:40 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduFVfsnO8dSTrbZVzGkuKj8A ;
+MsgType : text ;
+Content : 活动已经结束了！ ;
+
+2016-04-21 15:20:10 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduPBlg-mGd9RkncFlDFkycWY]]></FromUserName>
+<CreateTime>1461223210</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:20:30 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduPBlg-mGd9RkncFlDFkycWY]]></FromUserName>
+<CreateTime>1461223230</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:20:30 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-21 15:20:30 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduPBlg-mGd9RkncFlDFkycWY ;
+MsgType : text ;
+Content : 活动已经结束了！ ;
+
+2016-04-21 15:28:07 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduMAB8TUutXYVPFMZbwc0l0c]]></FromUserName>
+<CreateTime>1461223686</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[红包]]></Content>
+<MsgId>6275907943913671759</MsgId>
+</xml>
+
+2016-04-21 15:28:07 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-21 15:28:07 response :
+------------
+
+2016-04-21 15:28:17 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduMAB8TUutXYVPFMZbwc0l0c]]></FromUserName>
+<CreateTime>1461223697</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:28:19 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduMAB8TUutXYVPFMZbwc0l0c]]></FromUserName>
+<CreateTime>1461223699</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:28:19 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-21 15:28:19 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduMAB8TUutXYVPFMZbwc0l0c ;
+MsgType : text ;
+Content : 活动已经结束了！ ;
+
+2016-04-21 15:28:54 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduMAB8TUutXYVPFMZbwc0l0c]]></FromUserName>
+<CreateTime>1461223734</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[红包]]></Content>
+<MsgId>6275908150072101976</MsgId>
+</xml>
+
+2016-04-21 15:28:54 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-21 15:28:54 response :
+------------
+
+2016-04-21 15:30:04 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduMAB8TUutXYVPFMZbwc0l0c]]></FromUserName>
+<CreateTime>1461223804</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[首页]]></Content>
+<MsgId>6275908450719812709</MsgId>
+</xml>
+
+2016-04-21 15:30:04 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-21 15:30:04 response :
+------------
+
+2016-04-21 15:30:08 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduMAB8TUutXYVPFMZbwc0l0c]]></FromUserName>
+<CreateTime>1461223808</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[首页]]></Content>
+<MsgId>6275908467899681895</MsgId>
+</xml>
+
+2016-04-21 15:30:08 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-21 15:30:08 response :
+------------
+
+2016-04-21 15:32:16 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduMAB8TUutXYVPFMZbwc0l0c]]></FromUserName>
+<CreateTime>1461223936</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:32:19 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduMAB8TUutXYVPFMZbwc0l0c]]></FromUserName>
+<CreateTime>1461223939</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:32:19 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-21 15:32:19 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduMAB8TUutXYVPFMZbwc0l0c ;
+MsgType : text ;
+Content : 活动已经结束了！ ;
+
+2016-04-21 15:32:33 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduMAB8TUutXYVPFMZbwc0l0c]]></FromUserName>
+<CreateTime>1461223953</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[关注红包]]></Content>
+<MsgId>6275909090669939844</MsgId>
+</xml>
+
+2016-04-21 15:32:33 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-21 15:32:33 response :
+------------
+
+2016-04-21 15:32:37 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduMAB8TUutXYVPFMZbwc0l0c]]></FromUserName>
+<CreateTime>1461223957</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[关注]]></Content>
+<MsgId>6275909107849809029</MsgId>
+</xml>
+
+2016-04-21 15:32:37 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-21 15:32:37 response :
+------------
+
+2016-04-21 15:52:04 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduK34ifQtp0H4eF60BmUgzYY]]></FromUserName>
+<CreateTime>1461225124</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:52:12 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduK34ifQtp0H4eF60BmUgzYY]]></FromUserName>
+<CreateTime>1461225132</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-21 15:52:12 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-21 15:52:12 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduK34ifQtp0H4eF60BmUgzYY ;
+MsgType : text ;
+Content : 活动已经结束了！ ;
+
+2016-04-21 20:41:34 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduLh7uFOahTn3P9dm0o5pQUs]]></FromUserName>
+<CreateTime>1461242494</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+

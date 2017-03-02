@@ -1,0 +1,662 @@
+2016-04-05 10:41:44 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw8ei0qcxUBqwbP2s-hew0wU]]></FromUserName>
+<CreateTime>1459824104</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[11]]></Content>
+<MsgId>6269896784995158988</MsgId>
+</xml>
+
+2016-04-05 10:41:44 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-05 10:41:44 response :
+------------
+
+2016-04-05 10:42:05 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw8ei0qcxUBqwbP2s-hew0wU]]></FromUserName>
+<CreateTime>1459824125</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[客服]]></Content>
+<MsgId>6269896875189472209</MsgId>
+</xml>
+
+2016-04-05 10:42:05 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-05 10:42:05 response :
+------------
+
+2016-04-05 10:57:47 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw8ei0qcxUBqwbP2s-hew0wU]]></FromUserName>
+<CreateTime>1459825067</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[客服]]></Content>
+<MsgId>6269900921048665768</MsgId>
+</xml>
+
+2016-04-05 10:57:47 params :
+------------
+Array:
+message : Array ;
+module : custom ;
+rule : 13 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-05 10:57:47 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw8ei0qcxUBqwbP2s-hew0wU ;
+MsgType : transfer_customer_service ;
+
+2016-04-05 14:14:05 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459836845</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[大抽奖]]></Content>
+<MsgId>6269951507173483341</MsgId>
+</xml>
+
+2016-04-05 14:14:05 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-05 14:14:05 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw3tBAPB2N8H1-lqNRFMI4QQ ;
+MsgType : text ;
+Content : 欢迎进入艺境大抽奖 ;
+
+2016-04-05 14:14:09 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459836849</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[sd]]></Content>
+<MsgId>6269951524353352527</MsgId>
+</xml>
+
+2016-04-05 14:14:09 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+context : 1 ;
+
+2016-04-05 14:14:09 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw3tBAPB2N8H1-lqNRFMI4QQ ;
+MsgType : text ;
+Content : 请输入 姓名+答案编号（例如 王平1） ;
+
+2016-04-05 14:17:26 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459837046</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[抽奖]]></Content>
+<MsgId>6269952370461909915</MsgId>
+</xml>
+
+2016-04-05 14:17:26 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+context : 1 ;
+
+2016-04-05 14:17:26 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw3tBAPB2N8H1-lqNRFMI4QQ ;
+MsgType : text ;
+Content : 请输入 姓名+答案编号（例如 王平1） ;
+
+2016-04-05 14:17:44 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459837064</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[王平1]]></Content>
+<MsgId>6269952447771321254</MsgId>
+</xml>
+
+2016-04-05 14:17:44 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+context : 1 ;
+
+2016-04-05 14:17:44 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw3tBAPB2N8H1-lqNRFMI4QQ ;
+MsgType : text ;
+Content : 请输入 姓名+答案编号（例如 王平1） ;
+
+2016-04-05 14:18:11 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459837091</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[许薇敏02]]></Content>
+<MsgId>6269952563735438250</MsgId>
+</xml>
+
+2016-04-05 14:18:11 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+context : 1 ;
+
+2016-04-05 14:18:11 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw3tBAPB2N8H1-lqNRFMI4QQ ;
+MsgType : text ;
+Content : 请输入 姓名+答案编号（例如 王平1） ;
+
+2016-04-05 14:18:56 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw1MiGn-dpg2BRSL8uNyuGr8]]></FromUserName>
+<CreateTime>1459837136</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[大抽奖]]></Content>
+<MsgId>6269952757008966581</MsgId>
+</xml>
+
+2016-04-05 14:18:56 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-05 14:18:56 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw1MiGn-dpg2BRSL8uNyuGr8 ;
+MsgType : text ;
+Content : 欢迎进入艺境大抽奖 ;
+
+2016-04-05 14:19:06 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459837146</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[俞欣 2]]></Content>
+<MsgId>6269952799958639545</MsgId>
+</xml>
+
+2016-04-05 14:19:06 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+context : 1 ;
+
+2016-04-05 14:19:06 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw3tBAPB2N8H1-lqNRFMI4QQ ;
+MsgType : text ;
+Content : 请输入 姓名+答案编号（例如 王平1） ;
+
+2016-04-05 14:19:09 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw1MiGn-dpg2BRSL8uNyuGr8]]></FromUserName>
+<CreateTime>1459837149</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[哈]]></Content>
+<MsgId>6269952812843541436</MsgId>
+</xml>
+
+2016-04-05 14:19:09 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+context : 1 ;
+
+2016-04-05 14:19:09 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw1MiGn-dpg2BRSL8uNyuGr8 ;
+MsgType : text ;
+Content : 请输入 姓名+答案编号（例如 王平1） ;
+
+2016-04-05 14:19:18 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459837158</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[理解了怒火]]></Content>
+<MsgId>6269952851498247107</MsgId>
+</xml>
+
+2016-04-05 14:19:18 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+context : 1 ;
+
+2016-04-05 14:19:18 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw3tBAPB2N8H1-lqNRFMI4QQ ;
+MsgType : text ;
+Content : 请输入 姓名+答案编号（例如 王平1） ;
+
+2016-04-05 14:19:18 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw1MiGn-dpg2BRSL8uNyuGr8]]></FromUserName>
+<CreateTime>1459837158</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[许微微5]]></Content>
+<MsgId>6269952851498247109</MsgId>
+</xml>
+
+2016-04-05 14:19:18 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+context : 1 ;
+
+2016-04-05 14:19:18 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw1MiGn-dpg2BRSL8uNyuGr8 ;
+MsgType : text ;
+Content : 请输入 姓名+答案编号（例如 王平1） ;
+
+2016-04-05 14:19:31 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459837171</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[周翔1]]></Content>
+<MsgId>6269952907332821964</MsgId>
+</xml>
+
+2016-04-05 14:19:31 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+context : 1 ;
+
+2016-04-05 14:19:31 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw3tBAPB2N8H1-lqNRFMI4QQ ;
+MsgType : text ;
+Content : 请输入 姓名+答案编号（例如 王平1） ;
+
+2016-04-05 14:19:50 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw1MiGn-dpg2BRSL8uNyuGr8]]></FromUserName>
+<CreateTime>1459837190</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[微微6]]></Content>
+<MsgId>6269952988937200597</MsgId>
+</xml>
+
+2016-04-05 14:19:50 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+context : 1 ;
+
+2016-04-05 14:19:50 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw1MiGn-dpg2BRSL8uNyuGr8 ;
+MsgType : text ;
+Content : 请输入 姓名+答案编号（例如 王平1） ;
+
+2016-04-05 14:19:58 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459837198</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[孔子 3]]></Content>
+<MsgId>6269953023296938969</MsgId>
+</xml>
+
+2016-04-05 14:19:58 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+context : 1 ;
+
+2016-04-05 14:19:58 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw3tBAPB2N8H1-lqNRFMI4QQ ;
+MsgType : text ;
+Content : 请输入 姓名+答案编号（例如 王平1） ;
+
+2016-04-05 14:19:59 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw1MiGn-dpg2BRSL8uNyuGr8]]></FromUserName>
+<CreateTime>1459837199</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[微微1]]></Content>
+<MsgId>6269953027591906267</MsgId>
+</xml>
+
+2016-04-05 14:19:59 params :
+------------
+Array:
+message : Array ;
+module : we7_wxwall ;
+rule : 14 ;
+priority : 0 ;
+context : 1 ;
+
+2016-04-05 14:19:59 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw1MiGn-dpg2BRSL8uNyuGr8 ;
+MsgType : text ;
+Content : 请输入 姓名+答案编号（例如 王平1） ;
+
+2016-04-05 15:01:58 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459839718</CreateTime>
+<MsgType><![CDATA[voice]]></MsgType>
+<MediaId><![CDATA[I3StOKYCI4wpE_2ML7tdHf-Upj-TZN_9bNTZ4BA6GCzUOkravoKGFxyDWPVaZO0B]]></MediaId>
+<Format><![CDATA[amr]]></Format>
+<MsgId>6269963846211862528</MsgId>
+<Recognition><![CDATA[客服！]]></Recognition>
+</xml>
+
+2016-04-05 15:01:58 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-05 15:01:58 response :
+------------
+
+2016-04-05 15:02:07 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459839727</CreateTime>
+<MsgType><![CDATA[voice]]></MsgType>
+<MediaId><![CDATA[RbifIrlInmHWwB6U8iPpGX0VvDWcHuOG459gktF583_bTIqznqp87aOc2WlMvmZ7]]></MediaId>
+<Format><![CDATA[amr]]></Format>
+<MsgId>6269963884866568192</MsgId>
+<Recognition><![CDATA[客服！]]></Recognition>
+</xml>
+
+2016-04-05 15:02:07 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-05 15:02:07 response :
+------------
+
+2016-04-05 15:04:57 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459839897</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzI3ODA4NTQwNw==&mid=401067717&idx=1&sn=e809ac6c2d0ee2883240d79549b6a405&scene=18#wechat_redirect]]></EventKey>
+<MenuId>401838942</MenuId>
+</xml>
+
+2016-04-05 15:04:57 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-05 15:04:57 response :
+------------
+
+2016-04-05 15:05:07 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459839907</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzI3ODA4NTQwNw==&mid=400575959&idx=1&sn=cd9388040793615cae056826bddac700&scene=18#wechat_redirect]]></EventKey>
+<MenuId>401838942</MenuId>
+</xml>
+
+2016-04-05 15:05:07 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-05 15:05:07 response :
+------------
+
+2016-04-05 15:05:13 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1459839913</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzI3ODA4NTQwNw==&mid=401524251&idx=2&sn=7393a065ca6d5a9112efde68cf705314&scene=18#wechat_redirect]]></EventKey>
+<MenuId>401838942</MenuId>
+</xml>
+
+2016-04-05 15:05:13 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-05 15:05:13 response :
+------------
+
+2016-04-05 17:45:13 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwz8DjMTSD9FRwpx3seEKrl8]]></FromUserName>
+<CreateTime>1459849513</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[MASSSENDJOBFINISH]]></Event>
+<MsgID>402668312</MsgID>
+<Status><![CDATA[send success]]></Status>
+<TotalCount>151</TotalCount>
+<FilterCount>151</FilterCount>
+<SentCount>151</SentCount>
+<ErrorCount>0</ErrorCount>
+</xml>
+
+2016-04-05 17:45:13 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-05 17:45:13 response :
+------------
+
+2016-04-05 19:32:05 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3GiqEYNm4MUMQaipCUThkY]]></FromUserName>
+<CreateTime>1459855925</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-05 19:32:05 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-05 19:32:05 response :
+------------
+
+2016-04-05 20:42:10 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwyQJybq5aoRJyDhkWECbmsg]]></FromUserName>
+<CreateTime>1459860130</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-05 20:42:10 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-05 20:42:10 response :
+------------
+
+2016-04-05 21:17:51 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw8rByM1QjGmAjMqqRJEdt3w]]></FromUserName>
+<CreateTime>1459862271</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-05 21:17:51 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-05 21:17:51 response :
+------------
+

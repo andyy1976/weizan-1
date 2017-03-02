@@ -1,0 +1,68 @@
+2016-06-17 14:28:17 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw4Sm2T0jCaDt67MDEf__N24]]></FromUserName>
+<CreateTime>1466144897</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-06-17 14:28:17 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-17 14:28:17 response :
+------------
+
+2016-06-17 14:58:16 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw-66okTe93u7HqeK-XnosOg]]></FromUserName>
+<CreateTime>1466146696</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-06-17 14:58:16 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-17 14:58:16 response :
+------------
+
+2016-06-17 16:13:23 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwz8DjMTSD9FRwpx3seEKrl8]]></FromUserName>
+<CreateTime>1466151203</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[MASSSENDJOBFINISH]]></Event>
+<MsgID>413731043</MsgID>
+<Status><![CDATA[send success]]></Status>
+<TotalCount>179</TotalCount>
+<FilterCount>179</FilterCount>
+<SentCount>179</SentCount>
+<ErrorCount>0</ErrorCount>
+</xml>
+
+2016-06-17 16:13:23 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-17 16:13:23 response :
+------------
+

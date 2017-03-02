@@ -1,0 +1,54 @@
+2016-04-14 10:35:29 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw1Uh-EUclGwvWW-PNgWPbFs]]></FromUserName>
+<CreateTime>1460601329</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[qrscene_10000001]]></EventKey>
+</xml>
+
+2016-04-14 10:35:29 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-14 10:35:29 response :
+------------
+
+2016-04-14 10:37:24 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw1Uh-EUclGwvWW-PNgWPbFs]]></FromUserName>
+<CreateTime>1460601444</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzI3ODA4NTQwNw==&mid=401613448&idx=1&sn=cdbdb063d366e8fb6f07ed693c4fad58&scene=18#wechat_redirect]]></EventKey>
+<MenuId>401838942</MenuId>
+</xml>
+
+2016-04-14 10:37:24 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-14 10:37:24 response :
+------------
+
+2016-04-14 13:29:48 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw1Uh-EUclGwvWW-PNgWPbFs]]></FromUserName>
+<CreateTime>1460611788</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+

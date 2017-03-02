@@ -1,0 +1,99 @@
+{template 'common/header-wechat'}
+<div class="bandwechat">
+
+    <img src="./resource/images/powerlong-logo.png" alt="">
+
+    <table cellpadding="5">
+        <tr class="top10">
+            <td>会员卡号码：</td>
+            <td><input type="text" class="card_no" name="card_no" disabled value="{$bind_msg['card_no']}" ></td>
+            <input type="hidden" name="cards" class="cards" value="{$bind_msg['card_no']}">
+            <input type="hidden" class="openid" name="openid" value="{$bind_msg['openid']}">
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr class="top10">
+            <td>会员卡密码：</td>
+            <td><input type="password" class="card_pwd" pattern="[0-9]*" name="card_pwd" value="888888" ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="查询" class="band-button" ></td>
+        </tr>
+        </form>
+        <tr>
+            <td colspan="2" class="select-loading"></td>
+        </tr>
+    </table>
+</div>
+<div class="bandwechat card_msg">
+    <table>
+        <tr>
+            <td>会员卡号：</td>
+            <td class="cardno tleft" ></td>
+        </tr>
+        <tr>
+            <td>会员余额：</td>
+            <td class="cardbalance tleft" ></td>
+        </tr>
+        <tr>
+            <td>会员积分：</td>
+            <td class="cardintegral tleft"></td>
+        </tr>
+        <tr>
+            <td>冻结余额：</td>
+            <td class="cardfreezebalance tleft" ></td>
+        </tr>
+        <tr>
+            <td>抵扣余额：</td>
+            <td class="othbala tleft"></td>
+        </tr>
+    </table>
+</div>
+<dvi class="errors"></dvi>
+<div class="copyright ">
+    <p>Copyright © 2015-2016 Powerlong Real Estate Holdings</p>
+    <p>Limited All rights reserved. 沪ICP备15034132号</p>
+</div>
+<script>
+
+    $('.band-button').on('click',function(){
+        $('.select-loading').html('正在查询请稍后....');
+        var card_no  = $('.cards').val(),
+                openid = $('.openid').val(),
+                card_pwd = $('.card_pwd').val();
+
+        $.ajax({
+            type : "post",
+            url : "/web/index.php?c=user&a=usermsg&do=dobalancescore&ajaxs=ajax&openid="+ openid,
+            data : "card_no=" + card_no + "&card_pwd=" + card_pwd,
+            dataType : 'json',
+            success : function(data){
+                console.log(data);
+                var dt = typeof(data);
+                if(dt == 'object'){
+                    $('.select-loading').css({ 'display' : 'none' });
+                    $('.errors').css({ 'display' : 'none' });
+                    $('.cardno').html(data.cardno);
+                    $('.cardbalance').html(data.cardbalance + "元");
+                    $('.cardfreezebalance').html( data.cardfreezebalance);
+                    $('.cardintegral').html(data.cardintegral + "元");
+                    $('.othbala').html(data.othbala + "元");
+                    $('.card_msg').css({ 'display' : 'block' });
+                }else if(dt == 'string'){
+                    $('.select-loading').css({ 'display' : 'none' });
+                    $('.errors').html(data);
+                    $('.errors').css({ 'display' : 'block' });
+                    $('.card_msg').css({ 'display' : 'none' });
+                }else{
+                    $('.select-loading').css({ 'display' : 'none' });
+                    $('.errors').html('未查到该会员卡的信息');
+                    $('.errors').css({ 'display' : 'block' });
+                    $('.card_msg').css({ 'display' : 'none' });
+                }
+            }
+        });
+
+    })
+
+    $('title').html('我的余额与积分信息');
+</script>

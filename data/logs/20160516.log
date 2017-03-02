@@ -1,0 +1,22 @@
+2016-05-16 07:25:25 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jww4E0LdD64McbDvpADlzBWk]]></FromUserName>
+<CreateTime>1463354725</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzI3ODA4NTQwNw==&mid=400587201&idx=1&sn=26c0cc4aa8356102fd2d63e6c5770d48&scene=18#wechat_redirect]]></EventKey>
+<MenuId>401838942</MenuId>
+</xml>
+
+2016-05-16 07:25:25 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-05-16 07:25:25 response :
+------------
+

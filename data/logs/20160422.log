@@ -1,0 +1,200 @@
+2016-04-22 13:48:48 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwz8DjMTSD9FRwpx3seEKrl8]]></FromUserName>
+<CreateTime>1461304128</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[MASSSENDJOBFINISH]]></Event>
+<MsgID>403862270</MsgID>
+<Status><![CDATA[send success]]></Status>
+<TotalCount>163</TotalCount>
+<FilterCount>163</FilterCount>
+<SentCount>163</SentCount>
+<ErrorCount>0</ErrorCount>
+</xml>
+
+2016-04-22 13:48:48 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-22 13:48:48 response :
+------------
+
+2016-04-22 14:45:14 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduOxY1ZKU4H8R2QYKl-YQCS4]]></FromUserName>
+<CreateTime>1461307514</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-22 15:08:03 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jww0_axYdoRBPCd2CPh-5fjE]]></FromUserName>
+<CreateTime>1461308883</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-22 15:08:03 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-22 15:08:03 response :
+------------
+
+2016-04-22 15:08:22 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jww0_axYdoRBPCd2CPh-5fjE]]></FromUserName>
+<CreateTime>1461308902</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzI3ODA4NTQwNw==&mid=401600234&idx=3&sn=fdae3376023bddfcf7b7fb7a8ef208ae&scene=18#wechat_redirect]]></EventKey>
+<MenuId>401838942</MenuId>
+</xml>
+
+2016-04-22 15:08:22 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-22 15:08:22 response :
+------------
+
+2016-04-22 15:20:01 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw_IRlAeVYj1MiwTUyW-NrAo]]></FromUserName>
+<CreateTime>1461309601</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-22 17:07:15 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw-SCWmbgJFCliUV_fXGVLos]]></FromUserName>
+<CreateTime>1461316035</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-22 17:07:15 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-22 17:07:15 response :
+------------
+
+2016-04-22 17:07:26 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw-SCWmbgJFCliUV_fXGVLos]]></FromUserName>
+<CreateTime>1461316046</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[幸运抽大奖]]></Content>
+<MsgId>6276304627093896556</MsgId>
+</xml>
+
+2016-04-22 17:07:26 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-22 17:07:26 response :
+------------
+
+2016-04-22 17:31:16 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduF8p3UneQD3vLnDNM4z42Ps]]></FromUserName>
+<CreateTime>1461317476</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-22 17:31:48 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduF8p3UneQD3vLnDNM4z42Ps]]></FromUserName>
+<CreateTime>1461317508</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-22 17:31:53 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduF8p3UneQD3vLnDNM4z42Ps]]></FromUserName>
+<CreateTime>1461317508</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-22 17:31:53 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-22 17:31:53 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduF8p3UneQD3vLnDNM4z42Ps ;
+MsgType : text ;
+Content : 出错，未能领到红包:( ;
+
+2016-04-22 17:31:53 params :
+------------
+Array:
+message : Array ;
+module : czt_subscribe_redpack ;
+rule : 17 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-04-22 17:31:53 response :
+------------
+Array:
+FromUserName : gh_ff1e7a5af492 ;
+ToUserName : o0uJduF8p3UneQD3vLnDNM4z42Ps ;
+MsgType : text ;
+Content : 恭喜您领到一个红包了！ ;
+

@@ -1,0 +1,197 @@
+2016-03-09 09:15:10 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1457486109</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[抽]]></Content>
+<MsgId>6259855172931303344</MsgId>
+</xml>
+
+2016-03-09 09:15:10 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-03-09 09:15:10 response :
+------------
+
+2016-03-09 09:15:19 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1457486119</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[抽奖]]></Content>
+<MsgId>6259855215880976307</MsgId>
+</xml>
+
+2016-03-09 09:15:19 params :
+------------
+Array:
+message : Array ;
+module : hx_lottery ;
+rule : 9 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-03-09 09:15:19 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw3tBAPB2N8H1-lqNRFMI4QQ ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-03-09 09:16:16 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw0S_ij2dxk1Nr8X08WIkoUA]]></FromUserName>
+<CreateTime>1457486175</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[抽奖]]></Content>
+<MsgId>6259855456399144889</MsgId>
+</xml>
+
+2016-03-09 09:16:16 params :
+------------
+Array:
+message : Array ;
+module : hx_lottery ;
+rule : 9 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-03-09 09:16:16 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw0S_ij2dxk1Nr8X08WIkoUA ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-03-09 09:39:44 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1457487584</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[d]]></Content>
+<MsgId>6259861508008065192</MsgId>
+</xml>
+
+2016-03-09 09:39:44 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-03-09 09:39:44 response :
+------------
+
+2016-03-09 09:41:22 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw3tBAPB2N8H1-lqNRFMI4QQ]]></FromUserName>
+<CreateTime>1457487682</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[web]]></Content>
+<MsgId>6259861928914860218</MsgId>
+</xml>
+
+2016-03-09 09:41:22 params :
+------------
+Array:
+message : Array ;
+module : cover ;
+rule : 10 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-03-09 09:41:22 response :
+------------
+Array:
+FromUserName : gh_b75bad3e9d82 ;
+ToUserName : oH51jw3tBAPB2N8H1-lqNRFMI4QQ ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-03-09 11:50:14 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw7dKuMiuJDYC13sbBUNO9nY]]></FromUserName>
+<CreateTime>1457495414</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[qualification_verify_success]]></Event>
+<ExpiredTime>1489031408</ExpiredTime>
+</xml>
+
+2016-03-09 11:50:14 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-03-09 11:50:14 response :
+------------
+
+2016-03-09 11:50:16 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw7dKuMiuJDYC13sbBUNO9nY]]></FromUserName>
+<CreateTime>1457495416</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[naming_verify_success]]></Event>
+<ExpiredTime>1489031408</ExpiredTime>
+</xml>
+
+2016-03-09 11:50:16 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-03-09 11:50:16 response :
+------------
+
+2016-03-09 16:40:27 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwz8DjMTSD9FRwpx3seEKrl8]]></FromUserName>
+<CreateTime>1457512826</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[MASSSENDJOBFINISH]]></Event>
+<MsgID>402021887</MsgID>
+<Status><![CDATA[send success]]></Status>
+<TotalCount>133</TotalCount>
+<FilterCount>133</FilterCount>
+<SentCount>133</SentCount>
+<ErrorCount>0</ErrorCount>
+</xml>
+
+2016-03-09 16:40:27 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-03-09 16:40:27 response :
+------------
+

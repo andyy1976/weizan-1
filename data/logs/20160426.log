@@ -1,0 +1,22 @@
+2016-04-26 06:12:40 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduF-rbd2wBK5VtthPYrAQ2do]]></FromUserName>
+<CreateTime>1461622360</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-04-26 07:46:33 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ff1e7a5af492]]></ToUserName>
+<FromUserName><![CDATA[o0uJduGhnDPchpx2gcDnnf-y1xjA]]></FromUserName>
+<CreateTime>1461627993</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+

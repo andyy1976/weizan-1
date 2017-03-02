@@ -1,0 +1,30 @@
+2016-06-20 09:32:25 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_87c9b624047c]]></ToUserName>
+<FromUserName><![CDATA[oKap7wYXWPXMZ4kes11qvvcuJmyg]]></FromUserName>
+<CreateTime>1466386345</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[100004]]></EventKey>
+<Ticket><![CDATA[gQHz7joAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3F6b0FwSi1sZnZ3SGNNeTFnUlR0AAIEfUdnVwMEAI0nAA==]]></Ticket>
+</xml>
+
+2016-06-20 09:32:25 params :
+------------
+Array:
+message : Array ;
+module : mon_qmshake ;
+rule : 54 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-06-20 09:32:25 response :
+------------
+Array:
+FromUserName : gh_87c9b624047c ;
+ToUserName : oKap7wYXWPXMZ4kes11qvvcuJmyg ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+

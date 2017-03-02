@@ -1,0 +1,68 @@
+/*公共样式以及绑定会员卡样式*/
+.jumbotron { margin-top: 210px;}
+.bandwechat { text-align: center;  min-height:300px; min-width:320px;}
+.bandwechat img { margin:50px 0 50px 0;}
+.bandwechat table { margin: 0 auto;}
+.band-button { width:173px;background:#3190ee; height:25px; line-height: 20px; text-align:  center; font-size:13px; border-radius:3px; color:#fff; border:1px solid #3190ee; margin: 20px 0 0 5px;; cursor:pointer;}
+.copyright { position:absolute; bottom:0; text-align: center; left:30px;  min-width:320px;}
+input { margin-left:5px; text-indent:5px; border:1px solid #929292;}
+th { text-align: center;}
+.tright { text-align: right;}
+.tleft { text-align: left; text-indent: 20px;}
+.text-center { text-align: center;}
+.hidden { display:none}
+.card_msg , .errors { display:none; }
+.errors { margin-top: 50px;color:#ff0000; text-align: center;}
+.select-loading { text-align: center; line-height: 70px; color:#ff0000;}
+
+/*用户信息*/
+.usermsg tr { line-height:38px;}
+.usermsg .tright { text-align: right;}
+.usermsg .tleft { text-align: left; text-indent: 20px;}
+
+/*修改密码*/
+.updatepwd .band-button { margin:0 0 0 25px;}
+
+/*用户积分与余额*/
+.card_msg { height:120px; position:relative;top:70px;}
+.card_msg tr { line-height:30px;}
+
+/*查询我的优惠券*/
+.coupon { margin-top:-50px;}
+.coupon table { width:350px;}
+
+/*我的交易纪录*/
+.deal { min-height:400px;}
+.deal table { width:350px; text-align: center;}
+/*.begDate,.endDate,.deal_card { text-align:left; text-indent:10px; line-height: 24px; margin-left:5px; color:#000000;height:26px; width:174px; border:1px solid #929292; display:block; border-radius: 4px; }*/
+/*.deal_card { background:#eeeeee;}*/
+@media screen and (max-width: 384px) {
+    .jumbotron { margin-top: 180px;}
+    .bandwechat img { margin:40px 0 40px 0;}
+    .copyright { font-size:10px !important; left:28px; margin-top:120px; }
+    .usermsg tr { line-height:30px;}
+
+    .card_msg { margin-top:-30px;}
+
+    .coupon { margin-top:-90px;}
+
+}
+
+@media screen and (max-width: 320px) {
+    .jumbotron { margin-top: 75px;}
+    .bandwechat img { margin:30px 0 30px 0;}
+    /*.copyright { font-size:8px !important; left:0; margin-top:120px; }*/
+    .copyright { display:none; }
+    .usermsg tr { line-height:21px;}
+
+
+    .card_msg { margin-top:-50px;}
+    .card_msg tr { line-height:20px;}
+
+    .coupon { font-size:8px; position:relative; top:-20px; width:300px !important;}
+    .coupon tr{ line-height:23px;}
+    .coupon table { width:300px; margin-top:24px;}
+
+    .deal table { width:300px; font-size:5px;}
+
+}

@@ -1,0 +1,82 @@
+{template 'common/header-wechat'}
+<div class="bandwechat">
+    <img src="./resource/images/powerlong-logo.png" alt="">
+    <table cellpadding="5">
+        <tr class="top10">
+            <td>会员卡号码:</td>
+            <td><input type="text" class="card_no" name="card_no" disabled value="{$bind_msg['card_no']}" ></td>
+            <input type="hidden" class="openid" name="openid" value="{$bind_msg['openid']}">
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="查询" class="band-button" ></td>
+        </tr>
+        </form>
+        <tr>
+            <td colspan="2" class="select-loading"></td>
+        </tr>
+    </table>
+</div>
+<div class="copyright ">
+    <p>Copyright © 2015-2016 Powerlong Real Estate Holdings</p>
+    <p>Limited All rights reserved. 沪ICP备15034132号</p>
+</div>
+<div class="bandwechat card_msg coupon">
+    <table cellpadding="5" align="center" class="coupon_table">
+        <tr class="next_clear">
+            <th class="text-center">卡券编号</th>
+            <th class="text-center">卡券名称</th>
+            <th class="text-center">开始日期</th>
+            <th class="text-center">结束日期</th>
+        </tr>
+    </table>
+</div>
+<div class=" errors"></div>
+<script>
+
+    $('.band-button').on('click',function(){
+        $('.select-loading').html('正在查询请稍后....');
+        var cardNo  = $('.card_no').val(),
+                openid = $('.openid').val();
+
+        $.ajax({
+            type : "post",
+            url : "/web/index.php?c=user&a=usermsg&do=selectcoupon&ajaxs=ajax&openid="+ openid,
+            data : "card_no=" + cardNo ,
+            dataType : 'json',
+            success : function(data){
+                $('.select-loading').html();
+                var type = typeof(data);
+                if(type == 'string'){
+                    $('.select-loading').css({ 'display' : 'none' });
+                    $('.errors').html(data);
+                    $('.errors').css({ 'display' : 'block' });
+                    $('.card_msg').css({ 'display' : 'none' });
+                }else{
+                    console.log(data);
+                    $('.errors').css({ 'display' : 'none' });
+                    $('.next_clear').nextAll().empty();
+                    $('.select-loading').css({ 'display' : 'none' });
+                    for(var i= 0; i<data.length; i++){
+                        var htmls = "<tr><td>" +
+                                data[i][0] +
+                                "</td><td>" +
+                                data[i][1] +
+                                "</td><td>" +
+                                data[i][2] +
+                                "</td><td>" +
+                                data[i][3] +
+                                "</td></tr>" ;
+                        $('.coupon_table').append(htmls);
+                    }
+                    $('.card_msg').css({ 'display' : 'block' });
+                    $('.coupon_table tr:odd').css({'background-color' : '#e6e6e6'});
+                }
+            }
+        });
+
+    })
+
+    $('title').html('查询我的优惠券');
+
+</script>

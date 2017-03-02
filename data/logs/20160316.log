@@ -1,0 +1,26 @@
+2016-03-16 13:29:33 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwz8DjMTSD9FRwpx3seEKrl8]]></FromUserName>
+<CreateTime>1458106172</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[MASSSENDJOBFINISH]]></Event>
+<MsgID>402102752</MsgID>
+<Status><![CDATA[send success]]></Status>
+<TotalCount>133</TotalCount>
+<FilterCount>133</FilterCount>
+<SentCount>133</SentCount>
+<ErrorCount>0</ErrorCount>
+</xml>
+
+2016-03-16 13:29:33 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-03-16 13:29:33 response :
+------------
+

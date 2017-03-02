@@ -1,0 +1,138 @@
+{template 'common/header-wechat'}
+<div class="bandwechat">
+    <img src="./resource/images/powerlong-logo.png" alt="">
+    <table cellpadding="5">
+        <tr >
+            <td>会员卡号：</td>
+            <td><span  class="card_no deal_card " >{$bind_msg['card_no']}</span></td>
+            <input type="hidden" class="openid" name="openid" value="{$bind_msg['openid']}">
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+            <td>开始日期：</td>
+            <td><span class="begDate"  onClick="WdatePicker()" ></span></td>
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+            <td>结束日期：</td>
+            <td><span  class="endDate"  onClick="WdatePicker()" ></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="查询" class="band-button" ></td>
+        </tr>
+        </form>
+        <tr>
+            <td colspan="2" class="select-loading"></td>
+        </tr>
+    </table>
+</div>
+
+<div class="bandwechat card_msg deal">
+    <table cellpadding="5"  align="center" class="coupon_table">
+        <!--<tr class="mname">-->
+            <!--<th colspan="3">门店名称：<span class="shopname"></span></th>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<th colspan="3">门店号码：<span class="shopno"></span></th>-->
+        <!--<tr class="dkmoney">-->
+            <!--<th colspan="3">抵扣金额：<span class="dcamt"></span>元</th>-->
+        <!--</tr>-->
+        <tr class="next_clear">
+            <td>会员卡号</td>
+            <td>订单号码</td>
+            <td>交易金额</td>
+            <td>交易日期</td>
+        </tr>
+    </table>
+</div>
+
+<div class="copyright ">
+    <p>Copyright © 2015-2016 Powerlong Real Estate Holdings</p>
+    <p>Limited All rights reserved. 沪ICP备15034132号</p>
+</div>
+
+<div class=" errors"></div>
+<script>
+    $('title').html('查询我的交易纪录');
+
+    $('.band-button').on('click',function(){
+        $('.card_msg').css({'display':'none'});
+        $('.select-loading').html('正在查询请稍后....');
+        var card = $('.card_no').html(),
+                openid = $('.openid').val(),
+                begDate  = $('.begDate').html(),
+                endDate = $('.endDate').html();
+        begDate = begDate.replace(/-/g,'');
+        endDate = endDate.replace(/-/g,'');
+        $.ajax({
+            type : "post",
+            url : "/web/index.php?c=user&a=usermsg&do=selectdeal&ajaxs=ajax&openid="+ openid,
+            data : "card_no=" + card + "&begDate=" + begDate + '&endDate=' + endDate ,
+            dataType : 'json',
+            success : function(data){
+                console.log(data);
+                var type = typeof(data);
+                if(type == 'string'){
+                    $('.select-loading').css({ 'display' : 'none' });
+                    $('.errors').html(data);
+                    $('.errors').css({ 'display' : 'block' });
+                }else{
+                    console.log(data);
+                    $('.next_clear').nextAll().empty();
+                    $('.select-loading').css({ 'display' : 'none' });
+                    var fct = typeof(data['firstcard']);
+                    if(fct == 'object') {
+                        for (var i = 0; i < data['firstcard'].length; i++) {
+                            var htmls = "<tr><td>" +
+                                    data['firstcard'][i] +
+                                    "</td><td>" +
+                                    data['orderno'][i] +
+                                    "</td><td>" +
+                                    data['transactionamount'][i] +
+                                    "元</td><td>" +
+                                    data['transactiondate'][i] +
+                                    "</td></tr>";
+                            $('.coupon_table').append(htmls);
+                            $('.coupon_table tr:odd').css({'background-color' : '#e6e6e6'});
+                            $('.mname').css({ 'background-color' : '#fff'});
+                            $('.dkmoney').css({ 'background-color' : '#fff'});
+                            $('.coupon_table').attr({'date-table' : 'show'});
+                            var gd = $('.coupon_table').attr('date-table');
+                            if(gd == 'show'){
+                                $('.copyright').css({'display' : 'none'});
+                            }
+                        }
+                    }else{
+                        var htmls = "<tr><td>" +
+                                data['firstcard'] +
+                                "</td><td>" +
+                                data['orderno'] +
+                                "</td><td>" +
+                                data['transactionamount'] +
+                                "元</td><td>" +
+                                data['transactiondate'] +
+                                "</td></tr>";
+                        $('.coupon_table').append(htmls);
+                    }
+                    var shopname = data['shopname'],
+                            shopno = data['shopno'],
+                            dcamt = data['dcamt'];
+                    if(dcamt = ' '){
+                        dcamt = 0;
+                    }
+                    $('.shopname').html(shopname);
+                    $('.shopno').html(shopno);
+                    $('.dcamt').html(dcamt);
+                    $('.card_msg').css({ 'display' : 'block' });
+                    $('.errors').css({ 'display' : 'none' });
+                }
+            }
+        });
+
+    })
+
+
+
+
+</script>

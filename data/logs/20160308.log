@@ -1,0 +1,38 @@
+2016-03-08 12:00:57 platform-test-message :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jwz8DjMTSD9FRwpx3seEKrl8]]></FromUserName>
+<CreateTime>1457409656</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[MASSSENDJOBFINISH]]></Event>
+<MsgID>402004205</MsgID>
+<Status><![CDATA[send success]]></Status>
+<TotalCount>133</TotalCount>
+<FilterCount>133</FilterCount>
+<SentCount>133</SentCount>
+<ErrorCount>0</ErrorCount>
+</xml>
+
+2016-03-08 12:17:49 platform-test-message :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw1MiGn-dpg2BRSL8uNyuGr8]]></FromUserName>
+<CreateTime>1457410669</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[女]]></Content>
+<MsgId>6259531160598485467</MsgId>
+</xml>
+
+2016-03-08 12:17:54 platform-test-message :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_b75bad3e9d82]]></ToUserName>
+<FromUserName><![CDATA[oH51jw1MiGn-dpg2BRSL8uNyuGr8]]></FromUserName>
+<CreateTime>1457410673</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[女人]]></Content>
+<MsgId>6259531177778354655</MsgId>
+</xml>
+

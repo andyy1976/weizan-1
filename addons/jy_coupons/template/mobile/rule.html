@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>活动规则</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background: #00a4e2;
+        }
+        *{-webkit-tap-highlight-color:rgba(0,0,0,0)}
+        a{text-decoration: none;color: #fff}
+        .bgImg{width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            vertical-align: bottom;
+        }
+        #bodybox {
+            position: relative;
+            width: 100%;
+            max-width: 640px;
+        }
+        #bodybox>div{width: 94%;margin: 20% auto 0 auto;color: #157ca8;font-size: 11px;}
+        .con1{font-size: 16px;font-weight: bold;}
+        .mbtm2{margin-bottom: 2%;}
+        .content{line-height: 20px}
+        .mtop3{margin-top: 4%}
+        .con1-div{
+            border-radius: 10px;
+            background-color: #147da7
+        }
+        .content11{line-height: 20px;
+            padding: 5px;
+            color: #fff
+        }
+        .backBtn{
+            width: 15%;
+            padding: 4px 0;
+            background-color: #1c9ad2;
+            color: #fff;
+            border-radius: 5px;
+            margin-left: 7%;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 16px;
+        }
+        @media screen and (max-width:320px) {
+            #bodybox>div{font-size: 8px;margin: 13% auto 0 auto;}
+            .con1{font-size: 8px;}
+        }
+        @media screen and (min-width: 321px) and (max-width: 374px) {
+        }
+        @media screen and (min-width: 375px) and (max-width: 413px) {
+        }
+        @media screen and (min-width: 414px) {
+            #bodybox>div{font-size: 14px;}
+            .con1{font-size: 16px;}
+        }
+    </style>
+</head>
+<body>
+    {if empty($item['rule_bg'])}
+    <img class="bgImg" src="../addons/jy_coupons/images/rule.jpg"/>
+    {else}
+    <img class="bgImg" src="{$_W['attachurl']}{$item['rule_bg']}"/>
+    {/if}
+    <div id="bodybox">
+        <div>
+            <div class="con1 mtop3 mbtm2">活动规则：</div>
+            {php echo htmlspecialchars_decode($item['rule']);}
+
+            <a href="javascript:history.go(-1);"><div class="backBtn">返回</div></a>
+        </div>
+    </div>
+</body>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    {php $signPackage=$_W['account']['jssdkconfig'];}   
+    <script>
+
+    var appid = '{$_W['account']['jssdkconfig']['appId']}';
+    var timestamp = '{$_W['account']['jssdkconfig']['timestamp']}';
+    var nonceStr = '{$_W['account']['jssdkconfig']['nonceStr']}';
+    var signature = '{$_W['account']['jssdkconfig']['signature']}';
+
+    wx.config({
+        debug: false,   
+        appId: appid,
+        timestamp: timestamp,
+        nonceStr: nonceStr,
+        signature: signature,
+        jsApiList: ['checkJsApi','hideOptionMenu',]
+    });
+
+    wx.ready(function () {
+        wx.hideOptionMenu();
+
+    });
+    </script>
+</html>
